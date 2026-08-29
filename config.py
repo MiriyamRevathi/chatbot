@@ -75,3 +75,5 @@ config_by_name = {
 # Feature PR 08: feature/loan-amortization-emi
 
 # Feature PR 09: feature/credit-scoring-simulation
+
+# Feature PR 10: feature/ml-fraud-detection-pipeline
