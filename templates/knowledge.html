@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Knowledge Base — ChatFlow{% endblock %}
+{% block page_title %}Knowledge Base & Documentation{% endblock %}
+{% block content %}
+<div class="kb-header-bar">
+    <form method="GET" action="/knowledge" class="search-form">
+        <input type="text" name="q" value="{{ query }}" placeholder="Search articles, topics, billing, errors..." class="form-input search-input">
+        <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+</div>
+<div class="categories-bar">
+    <a href="/knowledge" class="category-chip {% if not current_cat %}active{% endif %}">All</a>
+    {% for cat in categories %}
+    <a href="/knowledge?category={{ cat }}" class="category-chip {% if current_cat == cat %}active{% endif %}">{{ cat }}</a>
+    {% endfor %}
+</div>
+<div class="articles-grid">
+    {% for a in articles %}
+    <div class="card article-card">
+        <span class="badge category-badge">{{ a.category }}</span>
+        <h3>{{ a.title }}</h3>
+        <p class="article-snippet">{{ a.content[:150] }}...</p>
+        <div class="article-footer">
+            <span class="text-muted">Views: {{ a.views }}</span>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

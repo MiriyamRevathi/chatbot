@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}Chat — ChatFlow{% endblock %}
+{% block page_title %}AI Assistant Chat{% endblock %}
+{% block content %}
+<div class="chat-container">
+    <div class="chat-sidebar">
+        <div class="chat-sidebar-header">
+            <button id="btn-new-chat" class="btn btn-primary btn-block">+ New Conversation</button>
+        </div>
+        <div class="conversation-list">
+            {% for c in conversations %}
+            <a href="/chat/{{ c.id }}" class="conv-item {% if current_conv and current_conv.id == c.id %}active{% endif %}">
+                <div class="conv-title">{{ c.title }}</div>
+                <div class="conv-meta">{{ c.updated_at[:10] }}</div>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="chat-main">
+        <div class="chat-header">
+            <h3>{{ current_conv.title if current_conv else 'New Conversation' }}</h3>
+            <span class="badge badge-status">{{ current_conv.status if current_conv else 'OPEN' }}</span>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            {% for m in messages %}
+            <div class="message-bubble message-{{ m.sender }}">
+                <div class="message-sender">{{ m.sender|capitalize }}</div>
+                <div class="message-text">{{ m.text }}</div>
+                {% if m.metadata %}
+                <div class="message-meta">
+                    <span class="meta-tag">Intent: {{ m.metadata.intent }}</span>
+                    <span class="meta-tag">Sentiment: {{ m.metadata.sentiment }}</span>
+                    <span class="meta-tag">Confidence: {{ (m.metadata.confidence * 100)|round }}%</span>
+                </div>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+        <div class="chat-input-area">
+            <textarea id="chat-input" class="chat-input" placeholder="Type your message... (Press Enter to send, Shift+Enter for new line)"></textarea>
+            <button id="btn-send-chat" class="btn btn-primary btn-send">Send</button>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+{% endblock %}
