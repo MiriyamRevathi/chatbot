@@ -1,21 +1,57 @@
 <div class="sidebar-header">
-    <a href="/dashboard" class="logo">
-        <span class="logo-icon">⚡</span>
-        <span class="logo-text">ChatFlow</span>
+    <a href="/dashboard" class="sidebar-brand">
+        <span class="brand-icon">⚡</span>
+        <span class="brand-text">ChatFlow</span>
+        <span class="brand-badge">v1.0</span>
     </a>
 </div>
+
 <nav class="sidebar-nav">
-    <a href="/dashboard" class="nav-item"><span class="icon">📊</span> Dashboard</a>
-    <a href="/chat" class="nav-item"><span class="icon">💬</span> AI Chat</a>
-    <a href="/knowledge" class="nav-item"><span class="icon">📚</span> Knowledge Base</a>
-    <a href="/nlp-lab" class="nav-item"><span class="icon">🔬</span> NLP Lab</a>
+    <div class="nav-section-title">MAIN MENU</div>
+    <a href="/dashboard" class="nav-item {% if request.path == '/' or request.path.startswith('/dashboard') %}active{% endif %}">
+        <span class="nav-icon">📊</span>
+        <span class="nav-label">Dashboard</span>
+    </a>
+    <a href="/chat" class="nav-item {% if request.path.startswith('/chat') %}active{% endif %}">
+        <span class="nav-icon">💬</span>
+        <span class="nav-label">AI Chatbot</span>
+    </a>
+    <a href="/knowledge" class="nav-item {% if request.path.startswith('/knowledge') %}active{% endif %}">
+        <span class="nav-icon">📚</span>
+        <span class="nav-label">Knowledge Base</span>
+    </a>
+
+    <div class="nav-section-title">NLP & ML ENGINE</div>
+    <a href="/nlp-lab" class="nav-item {% if request.path.startswith('/nlp-lab') %}active{% endif %}">
+        <span class="nav-icon">🔬</span>
+        <span class="nav-label">NLP Lab</span>
+    </a>
     {% if session.get('user_role') in ['ML_ENGINEER', 'ADMIN'] %}
-    <a href="/model-playground" class="nav-item"><span class="icon">🤖</span> Model Playground</a>
+    <a href="/model-playground" class="nav-item {% if request.path.startswith('/model-playground') %}active{% endif %}">
+        <span class="nav-icon">🤖</span>
+        <span class="nav-label">Model Playground</span>
+    </a>
     {% endif %}
-    <a href="/analytics" class="nav-item"><span class="icon">📈</span> Analytics</a>
+    <a href="/analytics" class="nav-item {% if request.path.startswith('/analytics') %}active{% endif %}">
+        <span class="nav-icon">📈</span>
+        <span class="nav-label">Analytics</span>
+    </a>
+
     {% if session.get('user_role') == 'ADMIN' %}
-    <div class="nav-divider"></div>
-    <a href="/admin" class="nav-item"><span class="icon">⚙️</span> Admin Panel</a>
-    <a href="/diagnostics" class="nav-item"><span class="icon">🩺</span> Diagnostics</a>
+    <div class="nav-section-title">ADMINISTRATION</div>
+    <a href="/admin" class="nav-item {% if request.path.startswith('/admin') %}active{% endif %}">
+        <span class="nav-icon">⚙️</span>
+        <span class="nav-label">Admin Panel</span>
+    </a>
+    <a href="/diagnostics" class="nav-item {% if request.path.startswith('/diagnostics') %}active{% endif %}">
+        <span class="nav-icon">🩺</span>
+        <span class="nav-label">Diagnostics</span>
+    </a>
     {% endif %}
 </nav>
+
+<div class="sidebar-footer">
+    <a href="/chat" class="btn btn-primary btn-block btn-new-chat">
+        <span class="icon">+</span> New Conversation
+    </a>
+</div>
