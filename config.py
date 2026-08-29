@@ -63,3 +63,5 @@ config_by_name = {
 # Feature PR 02: feature/user-authentication-rbac
 
 # Feature PR 03: feature/financial-math-accounts
+
+# Feature PR 04: feature/transaction-management-processor
