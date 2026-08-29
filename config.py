@@ -59,3 +59,5 @@ config_by_name = {
 # PR 1 feature commit
 
 # Feature PR 01: feature/core-infrastructure-storage
+
+# Feature PR 02: feature/user-authentication-rbac
