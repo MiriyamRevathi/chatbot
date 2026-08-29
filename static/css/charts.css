@@ -1,0 +1,3900 @@
+/* --- CHART STYLESHEET MODULE --- */
+.chart-variant-001 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-002 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-003 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-004 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-005 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-006 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-007 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-008 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-009 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-010 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-011 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-012 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-013 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-014 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-015 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-016 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-017 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-018 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-019 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-020 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-021 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-022 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-023 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-024 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-025 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-026 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-027 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-028 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-029 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-030 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-031 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-032 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-033 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-034 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-035 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-036 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-037 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-038 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-039 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-040 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-041 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-042 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-043 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-044 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-045 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-046 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-047 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-048 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-049 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-050 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-051 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-052 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-053 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-054 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-055 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-056 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-057 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-058 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-059 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-060 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-061 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-062 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-063 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-064 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-065 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-066 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-067 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-068 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-069 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-070 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-071 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-072 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-073 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-074 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-075 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-076 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-077 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-078 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-079 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-080 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-081 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-082 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-083 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-084 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-085 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-086 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-087 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-088 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-089 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-090 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-091 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-092 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-093 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-094 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-095 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-096 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-097 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-098 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-099 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-100 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-101 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-102 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-103 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-104 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-105 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-106 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-107 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-108 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-109 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-110 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-111 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-112 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-113 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-114 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-115 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-116 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-117 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-118 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-119 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-120 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-121 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-122 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-123 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-124 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-125 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-126 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-127 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-128 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-129 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-130 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-131 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-132 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-133 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-134 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-135 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-136 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-137 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-138 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-139 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-140 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-141 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-142 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-143 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-144 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-145 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-146 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-147 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-148 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-149 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-150 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-151 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-152 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-153 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-154 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-155 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-156 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-157 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-158 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-159 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-160 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-161 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-162 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-163 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-164 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-165 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-166 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-167 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-168 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-169 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-170 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-171 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-172 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-173 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-174 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-175 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-176 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-177 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-178 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-179 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-180 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-181 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-182 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-183 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-184 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-185 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-186 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-187 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-188 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-189 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-190 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-191 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-192 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-193 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-194 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-195 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-196 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-197 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-198 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-199 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-200 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-201 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-202 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-203 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-204 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-205 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-206 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-207 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-208 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-209 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-210 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-211 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-212 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-213 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-214 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-215 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-216 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-217 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-218 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-219 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-220 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-221 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-222 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-223 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-224 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-225 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-226 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-227 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-228 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-229 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-230 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-231 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-232 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-233 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-234 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-235 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-236 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-237 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-238 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-239 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-240 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-241 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-242 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-243 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-244 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-245 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-246 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-247 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-248 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-249 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-250 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-251 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-252 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-253 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-254 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-255 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-256 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-257 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-258 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-259 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-260 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-261 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-262 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-263 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-264 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-265 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-266 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-267 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-268 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-269 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-270 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-271 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-272 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-273 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-274 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-275 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-276 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-277 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-278 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-279 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-280 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-281 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-282 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-283 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-284 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-285 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-286 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-287 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-288 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-289 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-290 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-291 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-292 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-293 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-294 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-295 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-296 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.chart-variant-297 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.chart-variant-298 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.chart-variant-299 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.chart-variant-300 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}

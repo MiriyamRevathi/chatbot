@@ -1,0 +1,4550 @@
+/* --- COMPONENT STYLESHEET MODULE --- */
+.component-variant-001 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-002 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-003 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-004 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-005 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-006 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-007 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-008 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-009 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-010 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-011 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-012 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-013 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-014 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-015 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-016 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-017 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-018 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-019 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-020 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-021 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-022 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-023 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-024 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-025 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-026 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-027 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-028 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-029 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-030 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-031 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-032 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-033 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-034 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-035 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-036 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-037 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-038 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-039 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-040 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-041 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-042 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-043 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-044 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-045 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-046 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-047 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-048 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-049 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-050 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-051 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-052 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-053 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-054 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-055 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-056 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-057 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-058 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-059 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-060 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-061 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-062 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-063 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-064 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-065 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-066 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-067 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-068 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-069 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-070 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-071 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-072 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-073 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-074 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-075 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-076 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-077 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-078 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-079 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-080 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-081 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-082 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-083 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-084 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-085 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-086 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-087 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-088 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-089 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-090 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-091 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-092 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-093 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-094 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-095 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-096 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-097 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-098 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-099 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-100 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-101 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-102 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-103 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-104 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-105 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-106 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-107 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-108 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-109 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-110 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-111 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-112 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-113 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-114 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-115 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-116 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-117 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-118 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-119 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-120 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-121 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-122 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-123 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-124 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-125 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-126 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-127 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-128 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-129 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-130 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-131 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-132 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-133 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-134 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-135 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-136 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-137 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-138 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-139 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-140 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-141 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-142 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-143 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-144 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-145 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-146 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-147 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-148 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-149 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-150 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-151 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-152 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-153 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-154 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-155 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-156 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-157 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-158 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-159 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-160 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-161 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-162 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-163 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-164 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-165 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-166 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-167 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-168 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-169 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-170 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-171 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-172 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-173 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-174 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-175 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-176 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-177 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-178 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-179 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-180 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-181 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-182 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-183 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-184 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-185 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-186 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-187 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-188 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-189 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-190 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-191 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-192 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-193 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-194 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-195 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-196 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-197 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-198 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-199 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-200 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-201 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-202 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-203 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-204 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-205 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-206 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-207 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-208 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-209 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-210 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-211 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-212 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-213 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-214 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-215 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-216 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-217 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-218 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-219 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-220 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-221 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-222 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-223 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-224 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-225 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-226 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-227 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-228 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-229 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-230 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-231 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-232 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-233 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-234 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-235 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-236 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-237 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-238 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-239 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-240 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-241 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-242 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-243 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-244 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-245 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-246 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-247 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-248 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-249 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-250 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-251 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-252 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-253 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-254 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-255 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-256 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-257 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-258 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-259 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-260 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-261 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-262 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-263 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-264 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-265 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-266 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-267 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-268 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-269 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-270 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-271 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-272 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-273 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-274 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-275 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-276 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-277 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-278 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-279 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-280 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-281 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-282 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-283 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-284 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-285 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-286 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-287 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-288 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-289 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-290 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-291 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-292 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-293 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-294 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-295 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-296 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-297 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-298 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-299 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-300 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-301 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-302 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-303 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-304 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-305 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-306 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-307 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-308 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-309 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-310 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-311 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-312 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-313 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-314 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-315 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-316 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-317 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-318 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-319 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-320 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-321 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-322 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-323 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-324 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-325 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-326 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-327 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-328 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-329 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-330 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-331 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-332 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-333 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-334 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-335 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-336 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-337 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-338 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-339 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-340 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-341 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-342 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-343 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.00rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-344 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-345 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.50rem;
+  margin: 0.60rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-346 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.75rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.20rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.component-variant-347 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.00rem;
+  margin: 0.90rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.30rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.component-variant-348 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.15rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.40rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+}
+
+.component-variant-349 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.50rem;
+  margin: 0.30rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.50rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.component-variant-350 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  margin: 0.45rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.10rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
