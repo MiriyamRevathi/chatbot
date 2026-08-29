@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}FinTechHub Platform{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    {% if session.get('user_id') %}
+    <aside class="sidebar">
+        <div class="brand">
+            <span>⚡ FinTechHub</span>
+        </div>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="{{ url_for('dashboard.index') }}">📊 Dashboard</a></li>
+            <li class="nav-item"><a href="{{ url_for('accounts.index') }}">💳 Accounts</a></li>
+            <li class="nav-item"><a href="{{ url_for('transactions.index') }}">💸 Transactions</a></li>
+            <li class="nav-item"><a href="{{ url_for('budget.index') }}">🎯 Budget</a></li>
+            <li class="nav-item"><a href="{{ url_for('savings.index') }}">🛡️ Savings</a></li>
+            <li class="nav-item"><a href="{{ url_for('investments.index') }}">📈 Investments</a></li>
+            <li class="nav-item"><a href="{{ url_for('loans.index') }}">🏦 Loans & EMI</a></li>
+            <li class="nav-item"><a href="{{ url_for('credit.index') }}">⭐ Credit Score</a></li>
+            {% if session.get('user_role') in ['ANALYST', 'ADMIN'] %}
+            <li class="nav-item"><a href="{{ url_for('fraud.index') }}">🚨 Fraud Alerts</a></li>
+            <li class="nav-item"><a href="{{ url_for('forecast.index') }}">🔮 Forecasting</a></li>
+            <li class="nav-item"><a href="{{ url_for('segmentation.index') }}">🧩 Customer Segments</a></li>
+            {% endif %}
+            {% if session.get('user_role') == 'ADMIN' %}
+            <li class="nav-item"><a href="{{ url_for('admin.index') }}">⚙️ Admin Portal</a></li>
+            {% endif %}
+            <li class="nav-item"><a href="{{ url_for('reports.index') }}">📄 Reports</a></li>
+            <li class="nav-item"><a href="{{ url_for('auth.logout') }}">🚪 Logout</a></li>
+        </ul>
+    </aside>
+    {% endif %}
+
+    <div class="main-wrapper">
+        {% if session.get('user_id') %}
+        <header class="navbar">
+            <h2>FinTechHub Financial Intelligence</h2>
+            <div class="user-info">
+                <span>{{ session.get('full_name') }} ({{ session.get('user_role') }})</span>
+                <a href="{{ url_for('auth.profile') }}" class="btn btn-secondary">Profile</a>
+            </div>
+        </header>
+        {% endif %}
+
+        <main class="content-area">
+            {% with messages = get_flashed_messages(with_categories=true) %}
+              {% if messages %}
+                {% for category, message in messages %}
+                  <div class="card badge-{{ category }}" style="margin-bottom: 1rem; padding: 1rem;">
+                    {{ message }}
+                  </div>
+                {% endfor %}
+              {% endif %}
+            {% endwith %}
+
+            {% block content %}{% endblock %}
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

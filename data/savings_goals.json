@@ -1,0 +1,46 @@
+[
+  {
+    "id": "goal_eba029871c54",
+    "user_id": "user_customer_01",
+    "goal_name": "Emergency Reserve Fund",
+    "category": "EMERGENCY_FUND",
+    "target_amount": 15000.0,
+    "current_amount": 10500.0,
+    "target_date": "2026-12-31",
+    "monthly_contribution": 375.0,
+    "created_at": "2026-08-29T10:21:24.828710"
+  },
+  {
+    "id": "goal_28a7e3edb7cb",
+    "user_id": "user_customer_01",
+    "goal_name": "European Summer Vacation",
+    "category": "VACATION",
+    "target_amount": 4500.0,
+    "current_amount": 2800.0,
+    "target_date": "2027-06-15",
+    "monthly_contribution": 141.67,
+    "created_at": "2026-08-29T10:21:24.833745"
+  },
+  {
+    "id": "goal_f708c6f755e3",
+    "user_id": "user_customer_01",
+    "goal_name": "EV Vehicle Downpayment",
+    "category": "VEHICLE",
+    "target_amount": 8000.0,
+    "current_amount": 3200.0,
+    "target_date": "2027-03-31",
+    "monthly_contribution": 400.0,
+    "created_at": "2026-08-29T10:21:24.845616"
+  },
+  {
+    "id": "goal_879afd3cefd2",
+    "user_id": "user_customer_01",
+    "goal_name": "Home Renovation & Decor",
+    "category": "HOME",
+    "target_amount": 12000.0,
+    "current_amount": 4500.0,
+    "target_date": "2027-10-01",
+    "monthly_contribution": 625.0,
+    "created_at": "2026-08-29T10:21:24.863366"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "cred_user_customer_01",
+    "user_id": "user_customer_01",
+    "payment_history_pct": 98.5,
+    "credit_utilization_pct": 22.4,
+    "account_age_years": 6.5,
+    "active_lines_of_credit": 5,
+    "recent_hard_inquiries": 1,
+    "last_updated": "2026-08-29T10:21:25.133993"
+  }
+]

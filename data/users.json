@@ -1,0 +1,38 @@
+[
+  {
+    "id": "user_customer_01",
+    "username": "customer",
+    "email": "customer@fintechhub.local",
+    "password_hash": "scrypt:32768:8:1$yLgJoF2Cnlg3vEli$6b58eab4c79d0d9ada7b57626028a33f0f4ec87f2f117e262da6d65e1da1e3c303a2e619407c712af5dc21976a444c573284ef4b0f81fd2146d3fb5516729828",
+    "role": "CUSTOMER",
+    "full_name": "Alex Mercer (Customer)",
+    "phone": "+1-555-0192",
+    "is_active": true,
+    "created_at": "2026-08-29T10:21:24.096342",
+    "updated_at": "2026-08-29T10:21:24.096342"
+  },
+  {
+    "id": "user_analyst_01",
+    "username": "analyst",
+    "email": "analyst@fintechhub.local",
+    "password_hash": "scrypt:32768:8:1$2D5VEVE3eH7luOC3$061fa93925c55ccdaead2d2b6664691f4966e682a21e60d2c8633727ab2b968699d6764f7fa2352f65187cb0342781f6f5986fef34e557c141416a80cded3a04",
+    "role": "ANALYST",
+    "full_name": "Sarah Jenkins (Financial Analyst)",
+    "phone": "+1-555-0144",
+    "is_active": true,
+    "created_at": "2026-08-29T10:21:24.167648",
+    "updated_at": "2026-08-29T10:21:24.167648"
+  },
+  {
+    "id": "user_admin_01",
+    "username": "admin",
+    "email": "admin@fintechhub.local",
+    "password_hash": "scrypt:32768:8:1$820OmLQ9tSbHVA6V$0d0ec42bc625f2d64df5a6c3bdcac59bec8d01a2f7fea545d2e4e1434948d6c69b82c960de1efa311ba46a4f8c5a38c1527d63010d957c5550f38f326a374792",
+    "role": "ADMIN",
+    "full_name": "David Vance (System Administrator)",
+    "phone": "+1-555-0100",
+    "is_active": true,
+    "created_at": "2026-08-29T10:21:24.236403",
+    "updated_at": "2026-08-29T10:21:24.236403"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "acc_checking_01",
+    "user_id": "user_customer_01",
+    "account_number": "CHK-98421049",
+    "account_name": "Primary Checking Account",
+    "account_type": "CHECKING",
+    "balance": 12450.75,
+    "currency": "USD",
+    "is_active": true,
+    "created_at": "2026-08-29T10:21:24.374506",
+    "interest_rate": 0.05
+  },
+  {
+    "id": "acc_savings_01",
+    "user_id": "user_customer_01",
+    "account_number": "SAV-88319204",
+    "account_name": "High Yield Savings",
+    "account_type": "SAVINGS",
+    "balance": 45800.0,
+    "currency": "USD",
+    "is_active": true,
+    "created_at": "2026-08-29T10:21:24.374506",
+    "interest_rate": 4.25
+  },
+  {
+    "id": "acc_credit_01",
+    "user_id": "user_customer_01",
+    "account_number": "CRD-44109281",
+    "account_name": "Rewards Visa Card",
+    "account_type": "CREDIT",
+    "balance": -3120.5,
+    "currency": "USD",
+    "is_active": true,
+    "created_at": "2026-08-29T10:21:24.374506",
+    "interest_rate": 19.99
+  },
+  {
+    "id": "acc_invest_01",
+    "user_id": "user_customer_01",
+    "account_number": "INV-10928374",
+    "account_name": "Wealth Growth Portfolio",
+    "account_type": "INVESTMENT",
+    "balance": 89350.25,
+    "currency": "USD",
+    "is_active": true,
+    "created_at": "2026-08-29T10:21:24.374506",
+    "interest_rate": 7.5
+  }
+]

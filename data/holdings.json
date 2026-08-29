@@ -1,0 +1,57 @@
+[
+  {
+    "id": "hld_16f52af74491",
+    "user_id": "user_customer_01",
+    "symbol": "VOO",
+    "name": "Vanguard S&P 500 ETF",
+    "asset_class": "ETF",
+    "quantity": 50.0,
+    "purchase_price": 410.2,
+    "current_price": 485.5,
+    "last_updated": "2026-08-29T10:21:24.905811"
+  },
+  {
+    "id": "hld_977d16a632d3",
+    "user_id": "user_customer_01",
+    "symbol": "AAPL",
+    "name": "Apple Inc Common Stock",
+    "asset_class": "STOCKS",
+    "quantity": 35.0,
+    "purchase_price": 165.5,
+    "current_price": 224.3,
+    "last_updated": "2026-08-29T10:21:24.937657"
+  },
+  {
+    "id": "hld_1654ed267c4e",
+    "user_id": "user_customer_01",
+    "symbol": "MSFT",
+    "name": "Microsoft Corp Common Stock",
+    "asset_class": "STOCKS",
+    "quantity": 25.0,
+    "purchase_price": 310.0,
+    "current_price": 448.9,
+    "last_updated": "2026-08-29T10:21:24.954784"
+  },
+  {
+    "id": "hld_c5acae756674",
+    "user_id": "user_customer_01",
+    "symbol": "BND",
+    "name": "Vanguard Total Bond Market ETF",
+    "asset_class": "BONDS",
+    "quantity": 100.0,
+    "purchase_price": 72.5,
+    "current_price": 74.1,
+    "last_updated": "2026-08-29T10:21:24.979803"
+  },
+  {
+    "id": "hld_b39617938656",
+    "user_id": "user_customer_01",
+    "symbol": "GLD",
+    "name": "SPDR Gold Shares ETF",
+    "asset_class": "GOLD",
+    "quantity": 20.0,
+    "purchase_price": 185.0,
+    "current_price": 232.4,
+    "last_updated": "2026-08-29T10:21:24.991475"
+  }
+]

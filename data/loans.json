@@ -1,0 +1,41 @@
+[
+  {
+    "id": "loan_664d5ed4b70e",
+    "user_id": "user_customer_01",
+    "loan_name": "Primary Home Mortgage",
+    "loan_type": "HOME_LOAN",
+    "principal_amount": 350000.0,
+    "annual_interest_rate": 6.5,
+    "tenure_months": 360,
+    "remaining_balance": 310000.0,
+    "monthly_emi": 2212.24,
+    "start_date": "2023-01-01",
+    "created_at": "2026-08-29T10:21:25.039131"
+  },
+  {
+    "id": "loan_61d6bb1d58d3",
+    "user_id": "user_customer_01",
+    "loan_name": "Executive Auto Loan",
+    "loan_type": "VEHICLE_LOAN",
+    "principal_amount": 35000.0,
+    "annual_interest_rate": 5.25,
+    "tenure_months": 60,
+    "remaining_balance": 22500.0,
+    "monthly_emi": 664.51,
+    "start_date": "2023-01-01",
+    "created_at": "2026-08-29T10:21:25.075400"
+  },
+  {
+    "id": "loan_28ee2105e44a",
+    "user_id": "user_customer_01",
+    "loan_name": "Education Refinance Loan",
+    "loan_type": "EDUCATION_LOAN",
+    "principal_amount": 25000.0,
+    "annual_interest_rate": 4.75,
+    "tenure_months": 120,
+    "remaining_balance": 14200.0,
+    "monthly_emi": 262.12,
+    "start_date": "2023-01-01",
+    "created_at": "2026-08-29T10:21:25.088336"
+  }
+]
