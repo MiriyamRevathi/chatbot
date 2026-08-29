@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}Login — ChatFlow{% endblock %}
+{% block auth_content %}
+<div class="auth-card">
+    <div class="auth-header">
+        <h1>Welcome to ChatFlow</h1>
+        <p>AI Chatbot & Local NLP Platform</p>
+    </div>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+        {% for category, msg in messages %}
+        <div class="alert alert-{{ category }}">{{ msg }}</div>
+        {% endfor %}
+        {% endif %}
+    {% endwith %}
+    <form method="POST" action="/login" class="form-grid">
+        <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" name="email" id="login-email" required class="form-input" placeholder="user@chatflow.local">
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" name="password" id="login-password" required class="form-input" placeholder="••••••••">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+    </form>
+    <div class="demo-quick-login">
+        <p class="text-muted">Quick Demo Logins:</p>
+        <div class="demo-buttons">
+            <button onclick="fillDemo('user@chatflow.local', 'UserPass123!')" class="btn btn-xs btn-outline">User</button>
+            <button onclick="fillDemo('agent@chatflow.local', 'AgentPass123!')" class="btn btn-xs btn-outline">Agent</button>
+            <button onclick="fillDemo('engineer@chatflow.local', 'EngineerPass123!')" class="btn btn-xs btn-outline">ML Engineer</button>
+            <button onclick="fillDemo('admin@chatflow.local', 'AdminPass123!')" class="btn btn-xs btn-outline">Admin</button>
+        </div>
+    </div>
+    <div class="auth-footer">
+        <p>Don't have an account? <a href="/register">Register here</a></p>
+    </div>
+</div>
+<script>
+function fillDemo(email, pass) {
+    document.getElementById('login-email').value = email;
+    document.getElementById('login-password').value = pass;
+}
+</script>
+{% endblock %}

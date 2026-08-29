@@ -1,0 +1,4 @@
+.dashboard-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-bottom: 24px; }
+.stat-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 20px; }
+.stat-title { color: var(--text-muted); font-size: 14px; }
+.stat-value { font-size: 28px; font-weight: bold; margin-top: 8px; }
