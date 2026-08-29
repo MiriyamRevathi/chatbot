@@ -65,3 +65,5 @@ config_by_name = {
 # Feature PR 03: feature/financial-math-accounts
 
 # Feature PR 04: feature/transaction-management-processor
+
+# Feature PR 05: feature/budget-planning-analytics
