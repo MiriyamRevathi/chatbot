@@ -79,3 +79,5 @@ config_by_name = {
 # Feature PR 10: feature/ml-fraud-detection-pipeline
 
 # Feature PR 11: feature/spending-forecasting-segmentation
+
+# Feature PR 12: feature/risk-reporting-admin-dashboard
