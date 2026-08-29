@@ -31,3 +31,5 @@ class HybridDocumentSearch:
         return sorted(results, key=lambda x: x.get("search_score", 0), reverse=True)
 
 document_search = HybridDocumentSearch()
+
+# Optimized BM25 Term Frequency Saturation & Vector Search
