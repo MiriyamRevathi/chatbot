@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Analytics — ChatFlow{% endblock %}
+{% block page_title %}Full System Analytics Dashboard{% endblock %}
+{% block content %}
+<div class="dashboard-grid">
+    <div class="stat-card">
+        <div class="stat-title">Conversations</div>
+        <div class="stat-value">{{ stats.total_conversations }}</div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-title">Positive Sentiment</div>
+        <div class="stat-value">{{ stats.positive_sentiment_pct }}%</div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-title">Negative Sentiment</div>
+        <div class="stat-value">{{ stats.negative_sentiment_pct }}%</div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-title">Average Confidence</div>
+        <div class="stat-value">{{ (stats.average_confidence * 100)|round(1) }}%</div>
+    </div>
+</div>
+{% endblock %}

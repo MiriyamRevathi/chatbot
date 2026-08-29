@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}Dashboard — ChatFlow{% endblock %}
+{% block page_title %}System Overview Dashboard{% endblock %}
+{% block content %}
+<div class="dashboard-grid">
+    <div class="stat-card">
+        <div class="stat-title">Total Conversations</div>
+        <div class="stat-value">{{ stats.total_conversations }}</div>
+        <div class="stat-desc">Active sessions across platform</div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-title">Total Messages</div>
+        <div class="stat-value">{{ stats.total_messages }}</div>
+        <div class="stat-desc">Messages processed by NLP engine</div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-title">Average Confidence</div>
+        <div class="stat-value">{{ (stats.average_confidence * 100)|round(1) }}%</div>
+        <div class="stat-desc">Intent & Knowledge matching</div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-title">Avg Latency</div>
+        <div class="stat-value">{{ stats.average_response_time_ms }} ms</div>
+        <div class="stat-desc">Local NLP processing time</div>
+    </div>
+</div>
+
+<div class="content-row">
+    <div class="card card-wide">
+        <div class="card-header">
+            <h3>Intent Distribution Chart</h3>
+        </div>
+        <div class="card-body">
+            <div id="intent-chart-container" class="chart-box"></div>
+        </div>
+    </div>
+    <div class="card card-narrow">
+        <div class="card-header">
+            <h3>Knowledge Base Articles</h3>
+        </div>
+        <div class="card-body text-center">
+            <div class="big-metric">{{ kb_count }}</div>
+            <p>Published Articles Available</p>
+            <a href="/knowledge" class="btn btn-primary btn-sm mt-3">Browse Articles</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

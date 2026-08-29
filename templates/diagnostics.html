@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Diagnostics — ChatFlow{% endblock %}
+{% block page_title %}System Health Diagnostics{% endblock %}
+{% block content %}
+<div class="card">
+    <div class="card-header">
+        <h3>Telemetry Status</h3>
+    </div>
+    <div class="card-body">
+        <p><strong>System Status:</strong> <span class="badge badge-success">{{ diag.health.status }}</span></p>
+        <p><strong>Uptime:</strong> {{ diag.health.uptime_seconds }} seconds</p>
+        <p><strong>Python Version:</strong> {{ diag.health.python_version }}</p>
+        <p><strong>Platform:</strong> {{ diag.health.platform }}</p>
+    </div>
+</div>
+{% endblock %}

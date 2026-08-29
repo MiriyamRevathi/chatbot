@@ -1,0 +1,13 @@
+<div class="navbar-left">
+    <h2 class="page-title">{% block page_title %}Platform Dashboard{% endblock %}</h2>
+</div>
+<div class="navbar-right">
+    <button id="theme-toggle" class="btn btn-icon" title="Toggle Light/Dark Mode">🌙</button>
+    {% if session.get('user_name') %}
+    <div class="user-profile">
+        <span class="badge badge-role">{{ session.get('user_role') }}</span>
+        <span class="user-name">{{ session.get('user_name') }}</span>
+        <a href="/logout" class="btn btn-sm btn-outline">Logout</a>
+    </div>
+    {% endif %}
+</div>

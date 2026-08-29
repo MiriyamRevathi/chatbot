@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block title %}Model Playground — ChatFlow{% endblock %}
+{% block page_title %}ML Model Training & Evaluation{% endblock %}
+{% block content %}
+<div class="card">
+    <div class="card-header">
+        <h3>Train New Classifier Model</h3>
+    </div>
+    <div class="card-body">
+        <div class="form-inline">
+            <input type="text" id="model-name-input" class="form-input" placeholder="Model Name (e.g. Intent-LogReg-v2)">
+            <select id="model-algo-select" class="form-input">
+                <option value="naive_bayes">Multinomial Naive Bayes</option>
+                <option value="logistic_regression">Logistic Regression OVR</option>
+            </select>
+            <button id="btn-train-model" class="btn btn-primary">Train Model</button>
+        </div>
+    </div>
+</div>
+
+<div class="card mt-4">
+    <div class="card-header">
+        <h3>Registered Models Leaderboard</h3>
+    </div>
+    <div class="card-body">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Model Name</th>
+                    <th>Algorithm</th>
+                    <th>Accuracy</th>
+                    <th>F1 Score</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for m in models %}
+                <tr>
+                    <td>{{ m.name }}</td>
+                    <td>{{ m.algorithm }}</td>
+                    <td>{{ (m.accuracy * 100)|round(1) }}%</td>
+                    <td>{{ (m.f1_score * 100)|round(1) }}%</td>
+                    <td>
+                        {% if m.is_active %}
+                        <span class="badge badge-success">ACTIVE</span>
+                        {% else %}
+                        <span class="badge badge-secondary">INACTIVE</span>
+                        {% endif %}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}
