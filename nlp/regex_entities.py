@@ -33,3 +33,5 @@ class RegexEntityExtractor:
         return entities
 
 regex_entity_extractor = RegexEntityExtractor()
+
+# Expanded Pattern Regex & Gazetteer NER Rules
