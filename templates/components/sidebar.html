@@ -1,0 +1,21 @@
+<div class="sidebar-header">
+    <a href="/dashboard" class="logo">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">ChatFlow</span>
+    </a>
+</div>
+<nav class="sidebar-nav">
+    <a href="/dashboard" class="nav-item"><span class="icon">📊</span> Dashboard</a>
+    <a href="/chat" class="nav-item"><span class="icon">💬</span> AI Chat</a>
+    <a href="/knowledge" class="nav-item"><span class="icon">📚</span> Knowledge Base</a>
+    <a href="/nlp-lab" class="nav-item"><span class="icon">🔬</span> NLP Lab</a>
+    {% if session.get('user_role') in ['ML_ENGINEER', 'ADMIN'] %}
+    <a href="/model-playground" class="nav-item"><span class="icon">🤖</span> Model Playground</a>
+    {% endif %}
+    <a href="/analytics" class="nav-item"><span class="icon">📈</span> Analytics</a>
+    {% if session.get('user_role') == 'ADMIN' %}
+    <div class="nav-divider"></div>
+    <a href="/admin" class="nav-item"><span class="icon">⚙️</span> Admin Panel</a>
+    <a href="/diagnostics" class="nav-item"><span class="icon">🩺</span> Diagnostics</a>
+    {% endif %}
+</nav>

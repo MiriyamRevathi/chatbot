@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}Admin Panel — ChatFlow{% endblock %}
+{% block page_title %}System Administration & Audit Logs{% endblock %}
+{% block content %}
+<div class="card">
+    <div class="card-header">
+        <h3>User Account Management</h3>
+    </div>
+    <div class="card-body">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Email</th>
+                    <th>Name</th>
+                    <th>Role</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for u in users %}
+                <tr>
+                    <td>{{ u.email }}</td>
+                    <td>{{ u.name }}</td>
+                    <td><span class="badge badge-role">{{ u.role }}</span></td>
+                    <td><span class="badge badge-success">Active</span></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}
