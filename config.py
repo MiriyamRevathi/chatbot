@@ -71,3 +71,5 @@ config_by_name = {
 # Feature PR 06: feature/savings-goals-planner
 
 # Feature PR 07: feature/investment-portfolio-system
+
+# Feature PR 08: feature/loan-amortization-emi
