@@ -22,7 +22,7 @@ class RBAC:
         return "user_id" in session
 
     @classmethod
-    def require_auth(cls(f)):
+    def require_auth(cls, f):
         @wraps(f)
         def decorated(*args, **kwargs):
             if not session.get("user_id"):
