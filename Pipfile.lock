@@ -1,0 +1,87 @@
+{
+  "_meta": {
+    "hash": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pipfile-spec": 6,
+    "requires": {
+      "python_version": "3.10"
+    },
+    "sources": [
+      {
+        "name": "pypi",
+        "url": "https://pypi.org/simple",
+        "verify_ssl": true
+      }
+    ]
+  },
+  "default": {
+    "flask": {
+      "hashes": [
+        "sha256:d17e57ba5bbd2d3a3d2427a1367ee276acae11b8b809a7e6d0a7a3bfa2c8db01"
+      ],
+      "version": "==3.0.3"
+    },
+    "werkzeug": {
+      "hashes": [
+        "sha256:39f60032c5e533038676d1e4e69b5fd03a936a0d2f97155bb3f7a1f592d3f9ec"
+      ],
+      "version": "==3.0.3"
+    },
+    "jinja2": {
+      "hashes": [
+        "sha256:4a3f080c10243e0e7a2b9787e9e8f498305085d7b51b75276e076634567e9ec8"
+      ],
+      "version": "==3.1.4"
+    },
+    "pandas": {
+      "hashes": [
+        "sha256:4e38df7bc250b73c4d728564a5e01fbc65471d2b8b98a0026e6d1c9bfa78007a"
+      ],
+      "version": "==2.2.2"
+    },
+    "numpy": {
+      "hashes": [
+        "sha256:663f7360e6e7330353c65c697e88941785501867c48f86f7b19812543b59a930"
+      ],
+      "version": "==1.26.4"
+    },
+    "scikit-learn": {
+      "hashes": [
+        "sha256:87e2f5b404d092c730245a999818818f0a0678d91c7849e7b2339d3753c1507a"
+      ],
+      "version": "==1.5.0"
+    },
+    "matplotlib": {
+      "hashes": [
+        "sha256:606e1ef6a7243c3b0068593d6b054238e55e0996898867a57c2a7e780456102f"
+      ],
+      "version": "==3.9.0"
+    },
+    "joblib": {
+      "hashes": [
+        "sha256:7739501a35a64390029b9e67a0a68d0034a7c062828b0fdfbfa08d32d00a89d7"
+      ],
+      "version": "==1.4.2"
+    },
+    "openpyxl": {
+      "hashes": [
+        "sha256:2ef902517865239a5fefc5f87b8d00b12a8019024f2b1d3d6402513f56b37a50"
+      ],
+      "version": "==3.1.4"
+    },
+    "reportlab": {
+      "hashes": [
+        "sha256:91b29a282f1b0a5015b67272718e001859a0f51f50a807d9b50e7b8b209e7c5a"
+      ],
+      "version": "==4.2.0"
+    },
+    "pytest": {
+      "hashes": [
+        "sha256:39f602b662057d54d90956b6c2c77a8848a609d949b251a70c670a48b50289b4"
+      ],
+      "version": "==8.2.1"
+    }
+  },
+  "develop": {}
+}
