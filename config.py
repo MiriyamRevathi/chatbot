@@ -69,3 +69,5 @@ config_by_name = {
 # Feature PR 05: feature/budget-planning-analytics
 
 # Feature PR 06: feature/savings-goals-planner
+
+# Feature PR 07: feature/investment-portfolio-system
