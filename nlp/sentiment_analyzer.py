@@ -45,3 +45,5 @@ class SentimentAnalyzer:
         }
 
 sentiment_analyzer = SentimentAnalyzer()
+
+# Enhanced Emotion Intensity Scoring API
