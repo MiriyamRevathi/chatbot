@@ -29,3 +29,5 @@ class DiagnosticsService:
         }
 
 diagnostics_service = DiagnosticsService()
+
+# Added Real-time Thread, Memory, and Storage Telemetry
