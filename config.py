@@ -81,3 +81,5 @@ config_by_name = {
 # Feature PR 11: feature/spending-forecasting-segmentation
 
 # Feature PR 12: feature/risk-reporting-admin-dashboard
+
+# Feature PR: feature/navbar-redesign
