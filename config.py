@@ -87,3 +87,5 @@ config_by_name = {
 # Feature PR: feature/auth-ui
 
 # Feature PR: feature/chatflow-core
+
+# Feature PR: feature/chatflow-intents
