@@ -85,3 +85,5 @@ config_by_name = {
 # Feature PR: feature/navbar-redesign
 
 # Feature PR: feature/auth-ui
+
+# Feature PR: feature/chatflow-core
