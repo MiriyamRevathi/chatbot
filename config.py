@@ -95,3 +95,5 @@ config_by_name = {
 # Feature PR: feature/financial-analytics
 
 # Feature PR: feature/notifications
+
+# Feature PR: feature/reports-ui
