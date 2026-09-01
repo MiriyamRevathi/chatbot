@@ -59,6 +59,7 @@ class BudgetService:
                 "spent_amount": spent,
                 "remaining_amount": remaining,
                 "percentage_used": pct,
+                "percentage": pct,
                 "status": status,
                 "period": period
             })

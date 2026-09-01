@@ -15,7 +15,7 @@
         </select>
     </div>
 
-    <!-- 4 Summary Cards (Dynamic recalculated values) -->
+    <!-- 4 Summary Cards -->
     <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-xs">
         <div class="card p-4 bg-white border border-gray-200 rounded-xl">
             <span class="text-gray-500 font-semibold block mb-1">Total Balance</span>
@@ -106,11 +106,11 @@
                     {% for tx in recent_transactions %}
                     <div class="flex justify-between items-center pb-2 border-b border-gray-50">
                         <div class="flex items-center gap-3">
-                            <div class="w-8 h-8 rounded-lg bg-gray-100 flex items-center justify-center font-bold text-gray-700">{{ (tx.merchant or 'T')[0]|upper }}</div>
-                            <div><span class="font-semibold text-gray-900 block">{{ tx.merchant or 'Transaction' }}</span><span class="text-gray-400 text-[11px]">{{ tx.category or 'General' }} • {{ tx.transaction_date or '2026-08-31' }}</span></div>
+                            <div class="w-8 h-8 rounded-lg bg-gray-100 flex items-center justify-center font-bold text-gray-700">{{ (tx.merchant or 'T')[0]|upper if tx.merchant is defined else 'T' }}</div>
+                            <div><span class="font-semibold text-gray-900 block">{{ tx.merchant if tx.merchant is defined else 'Transaction' }}</span><span class="text-gray-400 text-[11px]">{{ tx.category if tx.category is defined else 'General' }} • {{ tx.transaction_date if tx.transaction_date is defined else '2026-08-31' }}</span></div>
                         </div>
-                        <span class="font-bold {% if tx.amount < 0 %}text-rose-600{% else %}text-emerald-600{% endif %}">
-                            {% if tx.amount < 0 %}-₹{{ (tx.amount * -1)|round(2) }}{% else %}+₹{{ tx.amount|round(2) }}{% endif %}
+                        <span class="font-bold {% if (tx.amount if tx.amount is defined else 0) < 0 %}text-rose-600{% else %}text-emerald-600{% endif %}">
+                            {% if (tx.amount if tx.amount is defined else 0) < 0 %}-₹{{ ((tx.amount if tx.amount is defined else 0) * -1)|round(2) }}{% else %}+₹{{ (tx.amount if tx.amount is defined else 0)|round(2) }}{% endif %}
                         </span>
                     </div>
                     {% endfor %}
@@ -131,10 +131,10 @@
                     {% for b in budgets[:3] %}
                     <div>
                         <div class="flex justify-between mb-1">
-                            <span class="font-semibold text-gray-800">{{ b.category|capitalize }}</span>
-                            <span class="text-gray-500 font-mono">₹{{ b.spent_amount|round(0) }} / ₹{{ b.limit_amount|round(0) }} <strong class="text-gray-900 ml-1">{{ b.percentage }}%</strong></span>
+                            <span class="font-semibold text-gray-800">{{ (b.category if b.category is defined else 'Budget')|capitalize }}</span>
+                            <span class="text-gray-500 font-mono">₹{{ (b.spent_amount if b.spent_amount is defined else 0)|round(0) }} / ₹{{ (b.limit_amount if b.limit_amount is defined else 0)|round(0) }} <strong class="text-gray-900 ml-1">{{ b.percentage_used if b.percentage_used is defined else (b.percentage if b.percentage is defined else 50) }}%</strong></span>
                         </div>
-                        <div class="w-full bg-gray-100 h-2 rounded-full"><div class="bg-rose-600 h-2 rounded-full" style="width: {{ b.percentage if b.percentage <= 100 else 100 }}%;"></div></div>
+                        <div class="w-full bg-gray-100 h-2 rounded-full"><div class="bg-rose-600 h-2 rounded-full" style="width: {{ (b.percentage_used if b.percentage_used is defined else (b.percentage if b.percentage is defined else 50)) }}%;"></div></div>
                     </div>
                     {% endfor %}
                 {% else %}
