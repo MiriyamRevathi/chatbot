@@ -3,62 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}FinTechHub AI — Financial Intelligence Platform{% endblock %}</title>
+    <title>{% block title %}FinTechHub — Financial Intelligence Platform{% endblock %}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     {% if session.get('user_id') %}
-    <!-- Top Header Navigation Bar (NO SIDEBAR) -->
+    <!-- Top Header Navigation Bar -->
     <header class="app-top-navbar">
         <div class="navbar-container">
             <a href="{{ url_for('dashboard.index') }}" class="navbar-brand">
-                <span class="brand-logo">⚡</span>
-                <span class="brand-name">FinTechHub</span>
+                <span class="brand-text-dark">FINTECH</span><span class="brand-text-red">HUB</span><span class="brand-dot">✦</span>
             </a>
 
-            <!-- Mobile Hamburger Toggle -->
-            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Toggle navigation menu">
-                ☰
-            </button>
-
-            <!-- Center Navigation Links -->
-            <nav class="navbar-menu" id="navbarMenu">
+            <!-- Navigation Links -->
+            <nav class="navbar-menu">
                 <a href="{{ url_for('dashboard.index') }}" class="nav-link {% if request.path == '/dashboard' or request.path == '/' %}active{% endif %}">Dashboard</a>
                 <a href="{{ url_for('accounts.index') }}" class="nav-link {% if request.path.startswith('/accounts') %}active{% endif %}">Accounts</a>
                 <a href="{{ url_for('transactions.index') }}" class="nav-link {% if request.path.startswith('/transactions') %}active{% endif %}">Transactions</a>
                 <a href="{{ url_for('budget.index') }}" class="nav-link {% if request.path.startswith('/budget') %}active{% endif %}">Budget</a>
                 <a href="{{ url_for('savings.index') }}" class="nav-link {% if request.path.startswith('/savings') %}active{% endif %}">Savings</a>
                 <a href="{{ url_for('investments.index') }}" class="nav-link {% if request.path.startswith('/investments') %}active{% endif %}">Investments</a>
-                <a href="{{ url_for('loans.index') }}" class="nav-link {% if request.path.startswith('/loans') %}active{% endif %}">Loans & EMI</a>
+                <a href="{{ url_for('loans.index') }}" class="nav-link {% if request.path.startswith('/loans') %}active{% endif %}">Loans</a>
                 <a href="{{ url_for('credit.index') }}" class="nav-link {% if request.path.startswith('/credit') %}active{% endif %}">Credit Score</a>
-                <a href="{{ url_for('chatflow.index') }}" class="nav-link chatflow-pill {% if request.path.startswith('/chatflow') %}active{% endif %}">ChatFlow</a>
                 <a href="{{ url_for('reports.index') }}" class="nav-link {% if request.path.startswith('/reports') %}active{% endif %}">Reports</a>
-                {% if session.get('user_role') in ['ANALYST', 'ADMIN'] %}
-                <a href="{{ url_for('fraud.index') }}" class="nav-link {% if request.path.startswith('/fraud') %}active{% endif %}">Fraud Alerts</a>
-                {% endif %}
-                {% if session.get('user_role') == 'ADMIN' %}
-                <a href="{{ url_for('admin.index') }}" class="nav-link {% if request.path.startswith('/admin') %}active{% endif %}">Admin Portal</a>
-                {% endif %}
+                <a href="{{ url_for('chatflow.index') }}" class="nav-link {% if request.path.startswith('/chatflow') %}active{% endif %}">ChatFlow</a>
             </nav>
 
-            <!-- Right Actions & Profile -->
+            <!-- Right Actions & User Profile -->
             <div class="navbar-right">
                 <a href="{{ url_for('chatflow.index') }}" class="notifications-btn" title="Notifications">
                     🔔 <span class="notification-dot"></span>
                 </a>
-                <div class="profile-dropdown">
-                    <button class="profile-btn" onclick="toggleProfileDropdown()">
-                        <span class="user-avatar">{{ session.get('full_name', 'U')[0]|upper }}</span>
-                        <span class="user-name">{{ session.get('full_name', 'User') }}</span>
+                <div class="profile-dropdown relative">
+                    <button class="profile-btn" onclick="toggleProfileMenu()">
+                        <span class="user-avatar">{{ session.get('full_name', 'A')[0]|upper }}</span>
+                        <span class="text-xs font-bold text-gray-800">{{ session.get('full_name', 'Alex') }}</span>
                     </button>
-                    <div class="dropdown-menu" id="profileDropdown">
-                        <div class="dropdown-header">
-                            <span class="font-bold">{{ session.get('full_name') }}</span>
-                            <span class="text-xs text-muted">{{ session.get('user_role') }}</span>
-                        </div>
-                        <div class="dropdown-divider"></div>
-                        <a href="{{ url_for('auth.profile') }}" class="dropdown-item">Profile</a>
-                        <a href="{{ url_for('auth.logout') }}" class="dropdown-item text-danger">Logout</a>
+                    <div id="profileMenu" class="hidden absolute right-0 top-10 w-44 bg-white border border-gray-200 rounded-xl shadow-lg p-2 z-50">
+                        <a href="{{ url_for('auth.profile') }}" class="block px-3 py-1.5 text-xs text-gray-700 hover:bg-gray-50 rounded-md">Profile Settings</a>
+                        <div class="h-px bg-gray-100 my-1"></div>
+                        <a href="{{ url_for('auth.logout') }}" class="block px-3 py-1.5 text-xs text-red-600 hover:bg-red-50 rounded-md font-semibold">Logout</a>
                     </div>
                 </div>
             </div>
@@ -68,38 +53,15 @@
 
     <div class="main-wrapper">
         <main class="content-area">
-            {% with messages = get_flashed_messages(with_categories=true) %}
-              {% if messages %}
-                {% for category, message in messages %}
-                  <div class="alert alert-{{ category }}" style="margin-bottom: 1rem; padding: 12px 16px; border-radius: 8px;">
-                    {{ message }}
-                  </div>
-                {% endfor %}
-              {% endif %}
-            {% endwith %}
-
             {% block content %}{% endblock %}
         </main>
     </div>
 
     <script>
-        function toggleMobileMenu() {
-            var menu = document.getElementById('navbarMenu');
-            menu.classList.toggle('open');
-        }
-        function toggleProfileDropdown() {
-            var dropdown = document.getElementById('profileDropdown');
-            dropdown.classList.toggle('show');
-        }
-        window.onclick = function(event) {
-            if (!event.target.closest('.profile-dropdown')) {
-                var dropdown = document.getElementById('profileDropdown');
-                if (dropdown && dropdown.classList.contains('show')) {
-                    dropdown.classList.remove('show');
-                }
-            }
+        function toggleProfileMenu() {
+            var menu = document.getElementById('profileMenu');
+            if (menu) menu.classList.toggle('hidden');
         }
     </script>
-    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
 </body>
 </html>

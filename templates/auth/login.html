@@ -1,96 +1,35 @@
 {% extends "base.html" %}
-{% block title %}Sign In — FinTechHub Platform{% endblock %}
+{% block title %}Sign In — FinTechHub{% endblock %}
 {% block content %}
-<div class="auth-page-wrapper flex items-center justify-center min-h-[85vh] py-8">
-    <div class="auth-grid-container grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl w-full bg-white border border-[var(--border)] rounded-2xl p-8 shadow-md">
-        
-        <!-- Left Product Slogan Column -->
-        <div class="auth-branding-col flex flex-col justify-between p-6 bg-[#f8fafc] rounded-xl border border-[var(--border)]">
+<div class="min-h-[80vh] flex items-center justify-center py-10">
+    <div class="w-full max-w-sm bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
+        <!-- Logo Wordmark -->
+        <div class="text-center mb-6">
+            <div class="text-2xl font-black tracking-tight mb-1">
+                <span class="text-gray-900">FINTECH</span><span class="text-rose-600">HUB</span><span class="text-amber-500 text-lg">✦</span>
+            </div>
+            <h2 class="text-xl font-bold text-gray-900">Welcome back</h2>
+            <p class="text-xs text-gray-500 mt-1">Please sign in to your account</p>
+        </div>
+
+        <form action="/auth/login" method="POST" class="space-y-4 text-xs">
             <div>
-                <div class="flex items-center gap-2 mb-6">
-                    <span class="text-3xl">⚡</span>
-                    <span class="text-2xl font-extrabold text-[var(--primary)]">FinTechHub</span>
-                </div>
-                <h2 class="text-2xl font-bold text-[var(--text-main)] mb-3">Take control of your finances.</h2>
-                <p class="text-sm text-[var(--text-muted)] leading-relaxed mb-6">
-                    Understand your spending, plan your future, and make smarter financial decisions with real-time analytics and ChatFlow AI.
-                </p>
-                <div class="space-y-3">
-                    <div class="flex items-center gap-3 text-xs text-[var(--text-main)]">
-                        <span class="w-5 h-5 rounded-full bg-blue-100 text-[var(--primary)] font-bold flex items-center justify-center">✓</span>
-                        <span>Multi-Account Aggregation & Net Worth Tracking</span>
-                    </div>
-                    <div class="flex items-center gap-3 text-xs text-[var(--text-main)]">
-                        <span class="w-5 h-5 rounded-full bg-blue-100 text-[var(--primary)] font-bold flex items-center justify-center">✓</span>
-                        <span>Automated Budgeting & Overspending Alerts</span>
-                    </div>
-                    <div class="flex items-center gap-3 text-xs text-[var(--text-main)]">
-                        <span class="w-5 h-5 rounded-full bg-blue-100 text-[var(--primary)] font-bold flex items-center justify-center">✓</span>
-                        <span>ChatFlow Conversational AI Assistant</span>
-                    </div>
+                <label class="block font-semibold text-gray-700 mb-1">Email address</label>
+                <input type="text" name="username" class="form-control w-full px-3.5 py-2.5 border border-gray-200 rounded-lg" placeholder="alex@example.com" value="customer" required>
+            </div>
+            <div>
+                <label class="block font-semibold text-gray-700 mb-1">Password</label>
+                <input type="password" name="password" class="form-control w-full px-3.5 py-2.5 border border-gray-200 rounded-lg" placeholder="••••••••" value="Customer123!" required>
+                <div class="text-right mt-1">
+                    <a href="/auth/login" class="text-rose-600 hover:underline font-semibold text-[11px]">Forgot password?</a>
                 </div>
             </div>
-            <div class="pt-6 border-t border-[var(--border)] mt-6 text-xs text-[var(--text-muted)]">
-                🔒 Enterprise-grade local data encryption & zero cloud exposure.
-            </div>
+            <button type="submit" class="btn btn-primary w-full py-3 rounded-lg font-bold text-xs bg-rose-600 hover:bg-rose-700 text-white mt-2">Sign In</button>
+        </form>
+
+        <div class="mt-6 pt-4 border-t border-gray-100 text-center text-xs text-gray-500">
+            Don't have an account? <a href="/auth/register" class="text-rose-600 font-bold hover:underline">Sign up</a>
         </div>
-
-        <!-- Right Sign In Form Column -->
-        <div class="auth-form-col flex flex-col justify-center p-4">
-            <div class="mb-6">
-                <h3 class="text-xl font-bold text-[var(--text-main)]">Welcome back</h3>
-                <p class="text-xs text-[var(--text-muted)] mt-1">Sign in to access your financial dashboard.</p>
-            </div>
-
-            {% with messages = get_flashed_messages(with_categories=true) %}
-                {% if messages %}
-                <div class="flash-messages mb-4">
-                    {% for category, msg in messages %}
-                    <div class="alert alert-{{ category }} text-xs p-3 rounded-lg bg-red-50 text-red-600 border border-red-200">
-                        {{ msg }}
-                    </div>
-                    {% endfor %}
-                </div>
-                {% endif %}
-            {% endwith %}
-
-            <form action="/auth/login" method="POST" class="space-y-4">
-                <div class="form-group">
-                    <label for="username" class="block text-xs font-semibold text-[var(--text-muted)] mb-1">Email Address or Username</label>
-                    <input type="text" id="username" name="username" class="form-control w-full px-4 py-2.5 rounded-lg border border-[var(--border)] text-sm" placeholder="customer" required value="customer">
-                </div>
-
-                <div class="form-group">
-                    <label for="password" class="block text-xs font-semibold text-[var(--text-muted)] mb-1">Password</label>
-                    <div class="relative flex items-center">
-                        <input type="password" id="password" name="password" class="form-control w-full px-4 py-2.5 rounded-lg border border-[var(--border)] text-sm" placeholder="••••••••" required value="Customer123!">
-                        <button type="button" onclick="togglePasswordVisibility()" class="absolute right-3 text-xs text-[var(--text-muted)] hover:text-[var(--text-main)]">👁️</button>
-                    </div>
-                </div>
-
-                <div class="flex items-center justify-between text-xs">
-                    <label class="flex items-center gap-2 cursor-pointer">
-                        <input type="checkbox" name="remember" class="rounded border-gray-300">
-                        <span class="text-[var(--text-muted)]">Remember me</span>
-                    </label>
-                    <a href="/auth/login" class="text-[var(--primary)] font-medium hover:underline">Forgot password?</a>
-                </div>
-
-                <button type="submit" class="btn btn-primary w-full py-3 rounded-lg text-sm font-semibold mt-2">Sign In to Account</button>
-            </form>
-
-            <div class="mt-6 pt-4 border-t border-[var(--border)] text-center text-xs text-[var(--text-muted)]">
-                Don't have an account? <a href="/auth/register" class="text-[var(--primary)] font-semibold hover:underline">Create account</a>
-            </div>
-        </div>
-
     </div>
 </div>
-
-<script>
-    function togglePasswordVisibility() {
-        var input = document.getElementById('password');
-        input.type = input.type === 'password' ? 'text' : 'password';
-    }
-</script>
 {% endblock %}
