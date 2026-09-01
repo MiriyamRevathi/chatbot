@@ -93,3 +93,5 @@ config_by_name = {
 # Feature PR: feature/chatflow-actions
 
 # Feature PR: feature/financial-analytics
+
+# Feature PR: feature/notifications
