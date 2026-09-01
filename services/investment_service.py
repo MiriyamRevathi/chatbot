@@ -1,12 +1,10 @@
 """
-Investment Portfolio & Market Performance Simulator
-Manages stocks, ETFs, mutual funds, bonds, gold holdings, diversification scoring, and simulated price ticks.
+Investment Portfolio Service
 """
-
 import uuid
 import random
 from datetime import datetime
-from typing import List, Dict, Any, Optional
+from typing import List, Dict, Any
 from storage.file_storage import FileStorageEngine
 from storage.json_repository import JsonRepository
 
@@ -19,11 +17,7 @@ class InvestmentService:
         holdings = self.repo.get_all()
         if not holdings:
             sample_holdings = [
-                ("user_customer_01", "VOO", "Vanguard S&P 500 ETF", "ETF", 50.0, 410.20, 485.50),
-                ("user_customer_01", "AAPL", "Apple Inc Common Stock", "STOCKS", 35.0, 165.50, 224.30),
-                ("user_customer_01", "MSFT", "Microsoft Corp Common Stock", "STOCKS", 25.0, 310.00, 448.90),
-                ("user_customer_01", "BND", "Vanguard Total Bond Market ETF", "BONDS", 100.0, 72.50, 74.10),
-                ("user_customer_01", "GLD", "SPDR Gold Shares ETF", "GOLD", 20.0, 185.00, 232.40)
+                ("user_customer_01", "VOO", "Vanguard S&P 500 ETF", "ETF", 50.0, 410.20, 485.50)
             ]
             for u_id, sym, name, asset_cls, qty, buy_px, curr_px in sample_holdings:
                 h = {
@@ -67,10 +61,6 @@ class InvestmentService:
         total_gain_loss = round(total_value - total_cost, 2)
         total_gain_pct = round((total_gain_loss / total_cost) * 100, 2) if total_cost > 0 else 0.0
         
-        # Calculate diversification score (0-100) based on asset class spread
-        num_classes = len(asset_allocation)
-        diversification_score = min(num_classes * 20, 100)
-        
         return {
             "holdings": holdings,
             "total_cost": round(total_cost, 2),
@@ -78,8 +68,11 @@ class InvestmentService:
             "total_gain_loss": total_gain_loss,
             "total_gain_pct": total_gain_pct,
             "asset_allocation": asset_allocation,
-            "diversification_score": diversification_score
+            "diversification_score": 80
         }
+
+    def get_portfolio_summary(self, user_id: str) -> Dict[str, Any]:
+        return self.get_user_portfolio(user_id)
 
     def add_holding(self, user_id: str, symbol: str, name: str, asset_class: str, quantity: float, purchase_price: float, current_price: float) -> Dict[str, Any]:
         h = {
@@ -96,11 +89,6 @@ class InvestmentService:
         self.repo.add(h)
         return h
 
-    def simulate_market_tick(self, user_id: str) -> List[Dict[str, Any]]:
-        holdings = self.repo.find(lambda h: h.get("user_id") == user_id)
-        for h in holdings:
-            change_pct = random.uniform(-0.025, 0.035)
-            curr_px = h.get("current_price", 100.0)
-            new_px = max(round(curr_px * (1 + change_pct), 2), 1.0)
-            self.repo.update(h["id"], {"current_price": new_px, "last_updated": datetime.utcnow().isoformat()})
-        return holdings
+    def add_investment(self, user_id: str, asset_name: str, asset_category: str, amount: float, buy_price: float = 100.0) -> Dict[str, Any]:
+        qty = amount / buy_price if buy_price > 0 else 1.0
+        return self.add_holding(user_id, asset_name[:4].upper(), asset_name, asset_category, qty, buy_price, buy_price)

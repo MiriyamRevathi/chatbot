@@ -1,8 +1,6 @@
 """
 Bank Account Management Service
-Handles creation, updating, balance transfers, summary statistics, and simulated account initializations.
 """
-
 import uuid
 import random
 from datetime import datetime
@@ -43,30 +41,6 @@ class AccountService:
                     is_active=True,
                     created_at=datetime.utcnow().isoformat(),
                     interest_rate=4.25
-                ),
-                Account(
-                    id="acc_credit_01",
-                    user_id="user_customer_01",
-                    account_number="CRD-44109281",
-                    account_name="Rewards Visa Card",
-                    account_type="CREDIT",
-                    balance=-3120.50,
-                    currency="USD",
-                    is_active=True,
-                    created_at=datetime.utcnow().isoformat(),
-                    interest_rate=19.99
-                ),
-                Account(
-                    id="acc_invest_01",
-                    user_id="user_customer_01",
-                    account_number="INV-10928374",
-                    account_name="Wealth Growth Portfolio",
-                    account_type="INVESTMENT",
-                    balance=89350.25,
-                    currency="USD",
-                    is_active=True,
-                    created_at=datetime.utcnow().isoformat(),
-                    interest_rate=7.50
                 )
             ]
             for a in demo_accs:
@@ -97,6 +71,9 @@ class AccountService:
         )
         self.repo.add(new_acc.to_dict())
         return new_acc
+
+    def add_account(self, user_id: str, account_name: str, account_type: str, initial_balance: float) -> Account:
+        return self.create_account(user_id, account_name, account_type, initial_balance)
 
     def update_balance(self, account_id: str, amount_change: float) -> tuple[bool, str, float]:
         acc = self.get_account_by_id(account_id)

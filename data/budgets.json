@@ -75,7 +75,7 @@
     "id": "bgt_07f58f09733f",
     "user_id": "user_customer_01",
     "category": "CHOCOLATE",
-    "limit_amount": 7000.0,
+    "limit_amount": 200.0,
     "period": "2026-08",
     "created_at": "2026-09-01T05:28:38.188465"
   },
