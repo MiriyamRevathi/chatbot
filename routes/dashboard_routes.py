@@ -19,6 +19,11 @@ def get_services():
     storage = FileStorageEngine(current_app.config["DATA_DIR"])
     return AccountService(storage), TransactionService(storage), BudgetService(storage), SavingsService(storage)
 
+def get_val(item, key, default=None):
+    if isinstance(item, dict):
+        return item.get(key, default)
+    return getattr(item, key, default)
+
 def get_date_range(period: str):
     today = datetime.now()
     if period == "LAST_MONTH":
@@ -47,15 +52,15 @@ def index():
     
     start_date, end_date = get_date_range(period)
     
-    # Filter transactions by selected date period
+    # Filter transactions by selected date period using safe get_val helper
     filtered_txs = []
     for tx in all_txs:
-        tdate = tx.get("transaction_date", "2026-08-31")
+        tdate = get_val(tx, "transaction_date", "2026-08-31")
         if start_date <= tdate <= end_date or period == "THIS_MONTH":
             filtered_txs.append(tx)
             
-    income = sum(t["amount"] for t in filtered_txs if t.get("amount", 0) > 0) or 65000.00
-    expenses = abs(sum(t["amount"] for t in filtered_txs if t.get("amount", 0) < 0)) or 18420.00
+    income = sum(get_val(t, "amount", 0.0) for t in filtered_txs if get_val(t, "amount", 0.0) > 0) or 65000.00
+    expenses = abs(sum(get_val(t, "amount", 0.0) for t in filtered_txs if get_val(t, "amount", 0.0) < 0)) or 18420.00
     if period == "LAST_MONTH":
         income = 58000.00
         expenses = 14200.00
@@ -66,7 +71,7 @@ def index():
     recent_txs = filtered_txs[:5] if filtered_txs else all_txs[:5]
     budgets = bgt_service.get_user_budgets_with_progress(user_id)
     goals = svg_service.get_user_goals(user_id)
-    total_savings = sum(g.get("current_amount", 0) for g in goals) or 41500.00
+    total_savings = sum(get_val(g, "current_amount", 0.0) for g in goals) or 41500.00
 
     risk_metrics = FinancialRiskEngine.calculate_health_and_risk(
         monthly_income=income,

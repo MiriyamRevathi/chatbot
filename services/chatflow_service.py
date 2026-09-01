@@ -5,6 +5,11 @@ ChatFlow Service Module — Single Source of Truth Dynamic Integration
 import re
 from typing import Dict, List, Any
 
+def get_val(item, key, default=None):
+    if isinstance(item, dict):
+        return item.get(key, default)
+    return getattr(item, key, default)
+
 class ChatFlowService:
     def __init__(self, account_service, transaction_service, budget_service, savings_service, investment_service, loan_service, credit_service):
         self.account_service = account_service
@@ -20,20 +25,20 @@ class ChatFlowService:
         
         # Live Account Balance
         accounts = self.account_service.get_user_accounts(user_id) if hasattr(self.account_service, "get_user_accounts") else []
-        total_bal = sum(a.get("balance", 0) for a in accounts) if accounts else 124500.00
+        total_bal = sum(get_val(a, "balance", 0) for a in accounts) if accounts else 124500.00
 
         # Live Transactions
         txs = self.transaction_service.get_user_transactions(user_id) if hasattr(self.transaction_service, "get_user_transactions") else []
-        total_spent = abs(sum(t.get("amount", 0) for t in txs if t.get("amount", 0) < 0)) or 18420.00
+        total_spent = abs(sum(get_val(t, "amount", 0) for t in txs if get_val(t, "amount", 0) < 0)) or 18420.00
         
         # Live Budgets
         budgets = self.budget_service.get_user_budgets_with_progress(user_id) if hasattr(self.budget_service, "get_user_budgets_with_progress") else []
-        bgt_total = sum(b.get("limit_amount", 0) for b in budgets) or 25000.00
-        bgt_spent = sum(b.get("spent_amount", 0) for b in budgets) or total_spent
+        bgt_total = sum(get_val(b, "limit_amount", 0) for b in budgets) or 25000.00
+        bgt_spent = sum(get_val(b, "spent_amount", 0) for b in budgets) or total_spent
         
         # Live Savings
         goals = self.savings_service.get_user_goals(user_id) if hasattr(self.savings_service, "get_user_goals") else []
-        total_saved = sum(g.get("current_amount", 0) for g in goals) or 41500.00
+        total_saved = sum(get_val(g, "current_amount", 0) for g in goals) or 41500.00
 
         if any(w in text for w in ["balance", "account", "money do i have", "how much money"]):
             return {

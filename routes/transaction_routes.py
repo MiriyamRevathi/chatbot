@@ -15,6 +15,11 @@ def get_services():
     storage = FileStorageEngine(current_app.config["DATA_DIR"])
     return TransactionService(storage), AccountService(storage)
 
+def get_val(item, key, default=None):
+    if isinstance(item, dict):
+        return item.get(key, default)
+    return getattr(item, key, default)
+
 @transaction_bp.route("/")
 @RBAC.require_auth
 def index():
@@ -66,7 +71,12 @@ def export_csv():
     
     csv_data = "Date,Merchant,Category,Account,Amount,Status\n"
     for tx in transactions:
-        csv_data += f"{tx.get('transaction_date','')},{tx.get('merchant','')},{tx.get('category','')},{tx.get('account_id','')},{tx.get('amount',0)},Completed\n"
+        tdate = get_val(tx, 'transaction_date', '')
+        tmerch = get_val(tx, 'merchant', '')
+        tcat = get_val(tx, 'category', '')
+        tacc = get_val(tx, 'account_id', '')
+        tamt = get_val(tx, 'amount', 0)
+        csv_data += f"{tdate},{tmerch},{tcat},{tacc},{tamt},Completed\n"
     
     return Response(
         csv_data,
