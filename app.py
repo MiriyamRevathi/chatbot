@@ -4,7 +4,7 @@ Initializes Flask app, registers blueprints, configures session storage, error h
 """
 
 import os
-from flask import Flask, render_template, jsonify
+from flask import Flask, render_template, jsonify, session, redirect, url_for
 from config import config_by_name
 
 def create_app(config_name: str = "dev") -> Flask:
@@ -26,6 +26,7 @@ def create_app(config_name: str = "dev") -> Flask:
     from routes.segmentation_routes import segmentation_bp
     from routes.report_routes import report_bp
     from routes.admin_routes import admin_bp
+    from routes.chatflow_routes import chatflow_bp
 
     app.register_blueprint(auth_bp)
     app.register_blueprint(dashboard_bp)
@@ -41,6 +42,13 @@ def create_app(config_name: str = "dev") -> Flask:
     app.register_blueprint(segmentation_bp)
     app.register_blueprint(report_bp)
     app.register_blueprint(admin_bp)
+    app.register_blueprint(chatflow_bp)
+
+    @app.route("/")
+    def index():
+        if session.get("user_id"):
+            return redirect(url_for("dashboard.index"))
+        return redirect(url_for("auth.login"))
 
     @app.errorhandler(404)
     def page_not_found(e):
