@@ -89,3 +89,5 @@ config_by_name = {
 # Feature PR: feature/chatflow-core
 
 # Feature PR: feature/chatflow-intents
+
+# Feature PR: feature/chatflow-actions
