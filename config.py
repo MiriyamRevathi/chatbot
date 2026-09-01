@@ -83,3 +83,5 @@ config_by_name = {
 # Feature PR 12: feature/risk-reporting-admin-dashboard
 
 # Feature PR: feature/navbar-redesign
+
+# Feature PR: feature/auth-ui
