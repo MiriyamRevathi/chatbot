@@ -78,5 +78,29 @@
     "limit_amount": 7000.0,
     "period": "2026-08",
     "created_at": "2026-09-01T05:28:38.188465"
+  },
+  {
+    "id": "bgt_88ccadcff912",
+    "user_id": "user_customer_01",
+    "category": "FOOD",
+    "limit_amount": 5000.0,
+    "period": "2026-08",
+    "created_at": "2026-09-01T05:41:34.609093"
+  },
+  {
+    "id": "bgt_8f7d978aca6c",
+    "user_id": "user_customer_01",
+    "category": "FOOD",
+    "limit_amount": 5000.0,
+    "period": "2026-08",
+    "created_at": "2026-09-01T05:41:49.752263"
+  },
+  {
+    "id": "bgt_83c94536805d",
+    "user_id": "user_customer_01",
+    "category": "QWERTYU",
+    "limit_amount": 5000.0,
+    "period": "2026-08",
+    "created_at": "2026-09-01T05:44:23.214515"
   }
 ]

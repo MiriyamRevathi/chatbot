@@ -2,19 +2,19 @@
 {% block title %}Reports — FinTechHub{% endblock %}
 {% block content %}
 <div class="reports-page space-y-6">
-    <div class="page-header border-b border-[var(--border)] pb-4">
-        <h1 class="text-2xl font-bold text-[var(--text-main)]">Reports</h1>
-        <p class="text-sm text-[var(--text-muted)]">Generate and download financial summary statements.</p>
+    <div class="page-header border-b border-gray-200 pb-4">
+        <h1 class="text-2xl font-bold text-gray-900">Reports</h1>
+        <p class="text-xs text-gray-500 mt-0.5">Generate and download financial summary statements.</p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
-        <div class="card p-4 bg-white border border-[var(--border)] rounded-xl flex justify-between items-center">
-            <div><h3 class="font-bold text-sm text-gray-900">Monthly Financial Statement</h3><p class="text-gray-500 mt-0.5">August 2026 Summary</p></div>
-            <a href="/reports" class="btn btn-secondary text-xs">Download PDF</a>
+        <div class="card p-4 bg-white border border-gray-200 rounded-xl flex justify-between items-center">
+            <div><h3 class="font-bold text-sm text-gray-900">Monthly Financial Statement</h3><p class="text-gray-500 mt-0.5">August 2026 PDF Summary</p></div>
+            <a href="/reports/download/pdf" class="btn btn-secondary text-xs bg-rose-50 text-rose-600 border-rose-200 hover:bg-rose-100">Download PDF ↗</a>
         </div>
-        <div class="card p-4 bg-white border border-[var(--border)] rounded-xl flex justify-between items-center">
-            <div><h3 class="font-bold text-sm text-gray-900">Expense Analysis Statement</h3><p class="text-gray-500 mt-0.5">Category Breakdown</p></div>
-            <a href="/reports" class="btn btn-secondary text-xs">Download CSV</a>
+        <div class="card p-4 bg-white border border-gray-200 rounded-xl flex justify-between items-center">
+            <div><h3 class="font-bold text-sm text-gray-900">Expense Analysis Statement</h3><p class="text-gray-500 mt-0.5">Category CSV Export</p></div>
+            <a href="/reports/download/csv" class="btn btn-secondary text-xs bg-rose-50 text-rose-600 border-rose-200 hover:bg-rose-100">Download CSV ↗</a>
         </div>
     </div>
 </div>

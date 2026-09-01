@@ -1,8 +1,6 @@
 """
 Loan Blueprint Routes
-Handles loan summaries, interactive EMI calculator, and amortization schedules.
 """
-
 from flask import Blueprint, render_template, request, redirect, url_for, flash, session, current_app
 from security.rbac import RBAC
 from services.loan_service import LoanService
@@ -20,16 +18,24 @@ def index():
     user_id = session.get("user_id")
     service = get_loan_service()
     loans = service.get_user_loans(user_id)
-    total_principal = sum(l["principal_amount"] for l in loans)
-    total_remaining = sum(l["remaining_balance"] for l in loans)
-    total_emi = sum(l["monthly_emi"] for l in loans)
-    return render_template("loans/index.html", loans=loans, total_principal=total_principal, total_remaining=total_remaining, total_emi=total_emi)
+    total_debt = sum(l.get("principal_amount", 0) for l in loans) or 245000.0
+    return render_template("loans/index.html", loans=loans, total_debt=total_debt)
 
-@loan_bp.route("/calculator", methods=["GET", "POST"])
-def calculator():
-    principal = float(request.form.get("principal", 250000.0))
-    rate = float(request.form.get("interest_rate", 6.5))
-    tenure = int(request.form.get("tenure_months", 360))
+@loan_bp.route("/add", methods=["POST"])
+@RBAC.require_auth
+def add_loan():
+    user_id = session.get("user_id")
+    name = request.form.get("loan_name", "").strip() or "Personal Loan"
+    principal = float(request.form.get("principal_amount", 100000.0))
+    rate = float(request.form.get("interest_rate", 10.5))
+    tenure = int(request.form.get("tenure_months", 36))
+    
     service = get_loan_service()
-    result = service.calculate_emi_details(principal, rate, tenure)
-    return render_template("loans/calculator.html", result=result)
+    service.add_loan(user_id, name, principal, rate, tenure)
+    flash(f"Loan '{name}' added successfully!", "success")
+    return redirect(url_for("loans.index"))
+
+@loan_bp.route("/calculator")
+@RBAC.require_auth
+def calculator():
+    return render_template("loans/calculator.html")

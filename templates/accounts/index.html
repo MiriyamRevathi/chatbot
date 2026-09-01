@@ -2,54 +2,84 @@
 {% block title %}Accounts — FinTechHub{% endblock %}
 {% block content %}
 <div class="accounts-page space-y-6">
-    <div class="page-header border-b border-[var(--border)] pb-4 flex justify-between items-center">
+    <div class="page-header border-b border-gray-200 pb-4 flex justify-between items-center">
         <div>
-            <h1 class="text-2xl font-bold text-[var(--text-main)]">Accounts</h1>
-            <p class="text-sm text-[var(--text-muted)]">Manage your connected bank and credit accounts.</p>
+            <h1 class="text-2xl font-bold text-gray-900">Accounts</h1>
+            <p class="text-xs text-gray-500 mt-0.5">Manage your connected bank and credit accounts.</p>
         </div>
-        <a href="/accounts" class="btn btn-primary text-xs">+ Add account</a>
+        <button onclick="toggleModal('addAccountModal')" class="btn btn-primary text-xs bg-rose-600 hover:bg-rose-700 text-white">+ Add account</button>
     </div>
 
-    <div class="p-4 bg-white border border-[var(--border)] rounded-xl flex items-center justify-between text-sm">
-        <span class="text-[var(--text-muted)]">Total Net Balance:</span>
-        <span class="text-xl font-bold text-[var(--text-main)]">₹1,24,500.00</span>
+    <div class="p-4 bg-white border border-gray-200 rounded-xl flex items-center justify-between text-xs">
+        <span class="text-gray-500 font-semibold">Total Net Balance:</span>
+        <span class="text-xl font-bold text-gray-900">₹{{ summary.net_worth|default(124500)|round(0) }}</span>
     </div>
 
-    <div class="card p-5 bg-white border border-[var(--border)] rounded-xl shadow-xs overflow-x-auto">
+    <div class="card p-5 bg-white border border-gray-200 rounded-xl shadow-xs overflow-x-auto">
         <table class="w-full text-xs text-left">
             <thead>
-                <tr class="border-b border-[var(--border)] text-[var(--text-muted)] uppercase">
+                <tr class="border-b border-gray-200 text-gray-500 uppercase">
                     <th class="pb-3">Account Name</th>
                     <th class="pb-3">Type</th>
-                    <th class="pb-3">Account Number</th>
                     <th class="pb-3 text-right">Balance</th>
-                    <th class="pb-3 text-right">Actions</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-100">
-                <tr>
-                    <td class="py-3 font-semibold text-gray-900">Primary Checking Account</td>
-                    <td class="py-3 text-gray-600">Checking</td>
-                    <td class="py-3 font-mono text-gray-500">•••• 4821</td>
-                    <td class="py-3 text-right font-bold text-gray-900">₹42,500.00</td>
-                    <td class="py-3 text-right"><a href="/transactions" class="btn btn-secondary text-xs px-2.5 py-1">View</a></td>
-                </tr>
-                <tr>
-                    <td class="py-3 font-semibold text-gray-900">High Yield Savings Account</td>
-                    <td class="py-3 text-gray-600">Savings</td>
-                    <td class="py-3 font-mono text-gray-500">•••• 9102</td>
-                    <td class="py-3 text-right font-bold text-gray-900">₹68,000.00</td>
-                    <td class="py-3 text-right"><a href="/transactions" class="btn btn-secondary text-xs px-2.5 py-1">View</a></td>
-                </tr>
-                <tr>
-                    <td class="py-3 font-semibold text-gray-900">Rewards Credit Card</td>
-                    <td class="py-3 text-gray-600">Credit Card</td>
-                    <td class="py-3 font-mono text-gray-500">•••• 3314</td>
-                    <td class="py-3 text-right font-bold text-rose-600">-₹14,000.00</td>
-                    <td class="py-3 text-right"><a href="/transactions" class="btn btn-secondary text-xs px-2.5 py-1">View</a></td>
-                </tr>
+                {% if accounts %}
+                    {% for a in accounts %}
+                    <tr>
+                        <td class="py-3 font-semibold text-gray-900">{{ a.account_name if a.account_name is defined else 'Checking Account' }}</td>
+                        <td class="py-3 text-gray-600">{{ a.account_type if a.account_type is defined else 'CHECKING' }}</td>
+                        <td class="py-3 text-right font-bold text-gray-900">₹{{ (a.balance if a.balance is defined else 0)|round(2) }}</td>
+                    </tr>
+                    {% endfor %}
+                {% else %}
+                    <tr><td class="py-3 font-semibold text-gray-900">Primary Checking Account</td><td class="py-3 text-gray-600">Checking</td><td class="py-3 text-right font-bold text-gray-900">₹42,500.00</td></tr>
+                    <tr><td class="py-3 font-semibold text-gray-900">High Yield Savings Account</td><td class="py-3 text-gray-600">Savings</td><td class="py-3 text-right font-bold text-gray-900">₹68,000.00</td></tr>
+                    <tr><td class="py-3 font-semibold text-gray-900">Rewards Credit Card</td><td class="py-3 text-gray-600">Credit Card</td><td class="py-3 text-right font-bold text-rose-600">-₹14,000.00</td></tr>
+                {% endif %}
             </tbody>
         </table>
     </div>
 </div>
+
+<!-- Add Account Modal -->
+<div id="addAccountModal" class="hidden fixed inset-0 bg-black/40 flex items-center justify-center z-50">
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 w-full max-w-md shadow-xl text-xs space-y-4">
+        <div class="flex justify-between items-center border-b border-gray-100 pb-3">
+            <h3 class="font-bold text-sm text-gray-900">Add Bank Account</h3>
+            <button onclick="toggleModal('addAccountModal')" class="text-gray-400 hover:text-gray-600">✕</button>
+        </div>
+        <form action="/accounts/add" method="POST" class="space-y-3">
+            <div>
+                <label class="block font-semibold text-gray-700 mb-1">Account Name</label>
+                <input type="text" name="account_name" class="form-control w-full px-3 py-2 border border-gray-200 rounded-lg" placeholder="e.g. Salary Checking Account" required>
+            </div>
+            <div>
+                <label class="block font-semibold text-gray-700 mb-1">Account Type</label>
+                <select name="account_type" class="form-control w-full px-3 py-2 border border-gray-200 rounded-lg">
+                    <option value="CHECKING">Checking Account</option>
+                    <option value="SAVINGS">Savings Account</option>
+                    <option value="CREDIT_CARD">Credit Card</option>
+                    <option value="INVESTMENT">Investment Account</option>
+                </select>
+            </div>
+            <div>
+                <label class="block font-semibold text-gray-700 mb-1">Initial Balance (₹)</label>
+                <input type="number" step="0.01" name="balance" class="form-control w-full px-3 py-2 border border-gray-200 rounded-lg" placeholder="25000" required>
+            </div>
+            <div class="flex justify-end gap-2 pt-3 border-t border-gray-100">
+                <button type="button" onclick="toggleModal('addAccountModal')" class="btn btn-secondary text-xs px-4">Cancel</button>
+                <button type="submit" class="btn btn-primary text-xs bg-rose-600 hover:bg-rose-700 text-white px-5">Add Account</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    function toggleModal(id) {
+        var modal = document.getElementById(id);
+        if (modal) modal.classList.toggle('hidden');
+    }
+</script>
 {% endblock %}

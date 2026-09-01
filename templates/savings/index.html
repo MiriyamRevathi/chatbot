@@ -2,40 +2,104 @@
 {% block title %}Savings Goals — FinTechHub{% endblock %}
 {% block content %}
 <div class="savings-page space-y-6">
-    <div class="page-header border-b border-[var(--border)] pb-4 flex justify-between items-center">
+    <div class="page-header border-b border-gray-200 pb-4 flex justify-between items-center">
         <div>
-            <h1 class="text-2xl font-bold text-[var(--text-main)]">Savings Goals</h1>
-            <p class="text-sm text-[var(--text-muted)]">Track progress toward your financial targets.</p>
+            <h1 class="text-2xl font-bold text-gray-900">Savings Goals</h1>
+            <p class="text-xs text-gray-500 mt-0.5">Track progress toward your financial targets.</p>
         </div>
-        <a href="/savings" class="btn btn-primary text-xs">+ New goal</a>
+        <button onclick="toggleModal('newGoalModal')" class="btn btn-primary text-xs bg-rose-600 hover:bg-rose-700 text-white">+ New goal</button>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs">
-        <div class="card p-5 bg-white border border-[var(--border)] rounded-xl shadow-xs">
-            <div class="flex justify-between items-center mb-2">
-                <h3 class="font-bold text-base text-gray-900">Emergency Fund</h3>
-                <span class="text-emerald-600 font-bold">70%</span>
+        {% if goals %}
+            {% for g in goals %}
+            <div class="card p-5 bg-white border border-gray-200 rounded-xl shadow-xs">
+                <div class="flex justify-between items-center mb-2">
+                    <h3 class="font-bold text-base text-gray-900">{{ g.goal_name if g.goal_name is defined else 'Savings Goal' }}</h3>
+                    <span class="text-emerald-600 font-bold">{{ ((g.current_amount / g.target_amount) * 100)|round(1) if g.target_amount is defined and g.target_amount > 0 else 70 }}%</span>
+                </div>
+                <p class="text-gray-500 mb-3">₹{{ (g.current_amount if g.current_amount is defined else 35000)|round(0) }} saved of ₹{{ (g.target_amount if g.target_amount is defined else 50000)|round(0) }} target</p>
+                <div class="w-full bg-gray-100 h-3 rounded-full mb-4"><div class="bg-emerald-600 h-3 rounded-full" style="width: {{ ((g.current_amount / g.target_amount) * 100)|round(0) if g.target_amount is defined and g.target_amount > 0 else 70 }}%;"></div></div>
+                <div class="flex justify-between items-center pt-3 border-t border-gray-100">
+                    <span class="text-gray-500">Target Date: {{ g.target_date if g.target_date is defined else '2026-12-31' }}</span>
+                    <button onclick="openContribModal('{{ g.id if g.id is defined else 'g1' }}')" class="btn btn-secondary text-xs px-3 py-1">Add Contribution</button>
+                </div>
             </div>
-            <p class="text-gray-500 mb-3">₹35,000 saved of ₹50,000 target</p>
-            <div class="w-full bg-gray-100 h-3 rounded-full mb-4"><div class="bg-emerald-600 h-3 rounded-full" style="width: 70%;"></div></div>
-            <div class="flex justify-between items-center pt-3 border-t border-gray-100">
-                <span class="text-gray-500">Monthly Contribution: ₹3,500</span>
-                <a href="/savings" class="btn btn-secondary text-xs px-3 py-1">Add Contribution</a>
+            {% endfor %}
+        {% else %}
+            <div class="card p-5 bg-white border border-gray-200 rounded-xl shadow-xs">
+                <div class="flex justify-between items-center mb-2">
+                    <h3 class="font-bold text-base text-gray-900">Emergency Fund</h3>
+                    <span class="text-emerald-600 font-bold">70%</span>
+                </div>
+                <p class="text-gray-500 mb-3">₹35,000 saved of ₹50,000 target</p>
+                <div class="w-full bg-gray-100 h-3 rounded-full mb-4"><div class="bg-emerald-600 h-3 rounded-full" style="width: 70%;"></div></div>
+                <div class="flex justify-between items-center pt-3 border-t border-gray-100">
+                    <span class="text-gray-500">Target Date: 2026-12-31</span>
+                    <button onclick="toggleModal('contributeModal')" class="btn btn-secondary text-xs px-3 py-1">Add Contribution</button>
+                </div>
             </div>
-        </div>
-
-        <div class="card p-5 bg-white border border-[var(--border)] rounded-xl shadow-xs">
-            <div class="flex justify-between items-center mb-2">
-                <h3 class="font-bold text-base text-gray-900">Vacation Fund</h3>
-                <span class="text-blue-600 font-bold">43.3%</span>
-            </div>
-            <p class="text-gray-500 mb-3">₹6,500 saved of ₹15,000 target</p>
-            <div class="w-full bg-gray-100 h-3 rounded-full mb-4"><div class="bg-blue-600 h-3 rounded-full" style="width: 43.3%;"></div></div>
-            <div class="flex justify-between items-center pt-3 border-t border-gray-100">
-                <span class="text-gray-500">Monthly Contribution: ₹1,500</span>
-                <a href="/savings" class="btn btn-secondary text-xs px-3 py-1">Add Contribution</a>
-            </div>
-        </div>
+        {% endif %}
     </div>
 </div>
+
+<!-- New Goal Modal -->
+<div id="newGoalModal" class="hidden fixed inset-0 bg-black/40 flex items-center justify-center z-50">
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 w-full max-w-md shadow-xl text-xs space-y-4">
+        <div class="flex justify-between items-center border-b border-gray-100 pb-3">
+            <h3 class="font-bold text-sm text-gray-900">Create New Savings Goal</h3>
+            <button onclick="toggleModal('newGoalModal')" class="text-gray-400 hover:text-gray-600">✕</button>
+        </div>
+        <form action="/savings/add" method="POST" class="space-y-3">
+            <div>
+                <label class="block font-semibold text-gray-700 mb-1">Goal Name</label>
+                <input type="text" name="goal_name" class="form-control w-full px-3 py-2 border border-gray-200 rounded-lg" placeholder="e.g. New Laptop Fund" required>
+            </div>
+            <div>
+                <label class="block font-semibold text-gray-700 mb-1">Target Amount (₹)</label>
+                <input type="number" step="100" name="target_amount" class="form-control w-full px-3 py-2 border border-gray-200 rounded-lg" placeholder="50000" required>
+            </div>
+            <div>
+                <label class="block font-semibold text-gray-700 mb-1">Target Date</label>
+                <input type="date" name="target_date" class="form-control w-full px-3 py-2 border border-gray-200 rounded-lg" value="2026-12-31">
+            </div>
+            <div class="flex justify-end gap-2 pt-3 border-t border-gray-100">
+                <button type="button" onclick="toggleModal('newGoalModal')" class="btn btn-secondary text-xs px-4">Cancel</button>
+                <button type="submit" class="btn btn-primary text-xs bg-rose-600 hover:bg-rose-700 text-white px-5">Save Goal</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Contribution Modal -->
+<div id="contributeModal" class="hidden fixed inset-0 bg-black/40 flex items-center justify-center z-50">
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 w-full max-w-md shadow-xl text-xs space-y-4">
+        <div class="flex justify-between items-center border-b border-gray-100 pb-3">
+            <h3 class="font-bold text-sm text-gray-900">Add Goal Contribution</h3>
+            <button onclick="toggleModal('contributeModal')" class="text-gray-400 hover:text-gray-600">✕</button>
+        </div>
+        <form action="/savings/contribute" method="POST" class="space-y-3">
+            <input type="hidden" id="contrib_goal_id" name="goal_id" value="g1">
+            <div>
+                <label class="block font-semibold text-gray-700 mb-1">Contribution Amount (₹)</label>
+                <input type="number" step="10" name="amount" class="form-control w-full px-3 py-2 border border-gray-200 rounded-lg" placeholder="2500" required>
+            </div>
+            <div class="flex justify-end gap-2 pt-3 border-t border-gray-100">
+                <button type="button" onclick="toggleModal('contributeModal')" class="btn btn-secondary text-xs px-4">Cancel</button>
+                <button type="submit" class="btn btn-primary text-xs bg-rose-600 hover:bg-rose-700 text-white px-5">Save Contribution</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    function toggleModal(id) {
+        var modal = document.getElementById(id);
+        if (modal) modal.classList.toggle('hidden');
+    }
+    function openContribModal(id) {
+        document.getElementById('contrib_goal_id').value = id;
+        toggleModal('contributeModal');
+    }
+</script>
 {% endblock %}

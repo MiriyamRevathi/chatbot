@@ -163,5 +163,20 @@
     "is_flagged_fraud": false,
     "anomaly_score": 0.0,
     "created_at": "2026-09-01T05:26:27.981637"
+  },
+  {
+    "id": "tx_8e52f4600f46",
+    "account_id": "acc_default",
+    "user_id": "user_customer_01",
+    "amount": 3456789.0,
+    "transaction_type": "INCOME",
+    "category": "BILLS",
+    "merchant": "wertyuikl",
+    "transaction_date": "2026-08-31",
+    "description": "",
+    "payment_method": "DEBIT_CARD",
+    "is_flagged_fraud": false,
+    "anomaly_score": 0.0,
+    "created_at": "2026-09-01T05:44:04.493568"
   }
 ]
