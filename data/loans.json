@@ -37,5 +37,18 @@
     "monthly_emi": 262.12,
     "start_date": "2023-01-01",
     "created_at": "2026-08-29T10:21:25.088336"
+  },
+  {
+    "id": "loan_a1d0b680f11b",
+    "user_id": "user_customer_01",
+    "loan_name": "345678i",
+    "loan_type": "PERSONAL_LOAN",
+    "principal_amount": 1000.0,
+    "annual_interest_rate": 8.5,
+    "tenure_months": 4,
+    "remaining_balance": 1000.0,
+    "monthly_emi": 250.0,
+    "start_date": "2026-09-01",
+    "created_at": "2026-09-01T05:57:41.144139"
   }
 ]

@@ -53,5 +53,16 @@
     "purchase_price": 185.0,
     "current_price": 232.4,
     "last_updated": "2026-08-29T10:21:24.991475"
+  },
+  {
+    "id": "hld_b32410c77a55",
+    "user_id": "user_customer_01",
+    "symbol": "1234",
+    "name": "1234",
+    "asset_class": "GOLD",
+    "quantity": 5.0,
+    "purchase_price": 100.0,
+    "current_price": 100.0,
+    "last_updated": "2026-09-01T05:57:07.860667"
   }
 ]

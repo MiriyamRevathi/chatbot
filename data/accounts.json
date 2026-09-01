@@ -46,5 +46,17 @@
     "is_active": true,
     "created_at": "2026-08-29T10:21:24.374506",
     "interest_rate": 7.5
+  },
+  {
+    "id": "acc_df91654120f5",
+    "user_id": "user_customer_01",
+    "account_number": "CRE-37409911",
+    "account_name": "1234567",
+    "account_type": "CREDIT_CARD",
+    "balance": 123456.0,
+    "currency": "USD",
+    "is_active": true,
+    "created_at": "2026-09-01T05:55:51.821472",
+    "interest_rate": 0.0
   }
 ]

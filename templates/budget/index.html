@@ -14,33 +14,36 @@
     <div class="p-4 bg-white border border-gray-200 rounded-xl flex items-center justify-between text-xs">
         <div>
             <span class="text-gray-500 font-semibold">Overall Monthly Budget:</span>
-            <span class="font-bold text-gray-900 ml-2">₹18,420 spent / ₹25,000 budget (73.7%)</span>
+            <span class="font-bold text-gray-900 ml-2">₹{{ total_spent|default(18420)|round(0) }} spent / ₹{{ total_budgeted|default(25000)|round(0) }} budget ({{ overall_pct|default(73.7) }}%)</span>
         </div>
         <span class="badge badge-success text-xs">On Track</span>
     </div>
 
     <!-- Category Budgets -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
-        <div class="card p-4 bg-white border border-gray-200 rounded-xl">
-            <div class="flex justify-between font-bold text-sm mb-2"><span>Food & Dining</span><span>₹6,200 / ₹8,000</span></div>
-            <div class="w-full bg-gray-100 h-2.5 rounded-full mb-2"><div class="bg-rose-600 h-2.5 rounded-full" style="width: 77.5%;"></div></div>
-            <span class="text-gray-500">₹1,800 remaining</span>
-        </div>
-        <div class="card p-4 bg-white border border-gray-200 rounded-xl">
-            <div class="flex justify-between font-bold text-sm mb-2"><span>Shopping</span><span>₹3,400 / ₹5,000</span></div>
-            <div class="w-full bg-gray-100 h-2.5 rounded-full mb-2"><div class="bg-rose-600 h-2.5 rounded-full" style="width: 68%;"></div></div>
-            <span class="text-gray-500">₹1,600 remaining</span>
-        </div>
-        <div class="card p-4 bg-white border border-gray-200 rounded-xl">
-            <div class="flex justify-between font-bold text-sm mb-2"><span>Travel & Transit</span><span>₹2,800 / ₹4,000</span></div>
-            <div class="w-full bg-gray-100 h-2.5 rounded-full mb-2"><div class="bg-amber-500 h-2.5 rounded-full" style="width: 70%;"></div></div>
-            <span class="text-gray-500">₹1,200 remaining</span>
-        </div>
-        <div class="card p-4 bg-white border border-gray-200 rounded-xl">
-            <div class="flex justify-between font-bold text-sm mb-2"><span>Bills & Utilities</span><span>₹2,100 / ₹3,000</span></div>
-            <div class="w-full bg-gray-100 h-2.5 rounded-full mb-2"><div class="bg-amber-500 h-2.5 rounded-full" style="width: 70%;"></div></div>
-            <span class="text-gray-500">₹900 remaining</span>
-        </div>
+        {% if budgets %}
+            {% for b in budgets %}
+            <div class="card p-4 bg-white border border-gray-200 rounded-xl">
+                <div class="flex justify-between font-bold text-sm mb-2">
+                    <span>{{ (b.category if b.category is defined else 'General')|capitalize }}</span>
+                    <span>₹{{ (b.spent_amount if b.spent_amount is defined else 0)|round(0) }} / ₹{{ (b.limit_amount if b.limit_amount is defined else 1000)|round(0) }}</span>
+                </div>
+                <div class="w-full bg-gray-100 h-2.5 rounded-full mb-2">
+                    <div class="bg-rose-600 h-2.5 rounded-full" style="width: {{ (b.percentage_used if b.percentage_used is defined else (b.percentage if b.percentage is defined else 50)) }}%;"></div>
+                </div>
+                <div class="flex justify-between text-gray-500 text-[11px]">
+                    <span>₹{{ (b.remaining_amount if b.remaining_amount is defined else 0)|round(0) }} remaining</span>
+                    <span class="font-bold text-gray-900">{{ (b.percentage_used if b.percentage_used is defined else (b.percentage if b.percentage is defined else 50)) }}%</span>
+                </div>
+            </div>
+            {% endfor %}
+        {% else %}
+            <div class="card p-4 bg-white border border-gray-200 rounded-xl">
+                <div class="flex justify-between font-bold text-sm mb-2"><span>Food & Dining</span><span>₹6,200 / ₹8,000</span></div>
+                <div class="w-full bg-gray-100 h-2.5 rounded-full mb-2"><div class="bg-rose-600 h-2.5 rounded-full" style="width: 77.5%;"></div></div>
+                <span class="text-gray-500">₹1,800 remaining</span>
+            </div>
+        {% endif %}
     </div>
 </div>
 

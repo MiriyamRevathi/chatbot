@@ -14,34 +14,45 @@
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
         <div class="card p-4 bg-white border border-gray-200 rounded-xl">
             <span class="text-xs font-semibold text-gray-500 uppercase">Portfolio Value</span>
-            <span class="text-xl font-bold text-gray-900 block mt-1">₹1,85,400.00</span>
+            <span class="text-xl font-bold text-gray-900 block mt-1">₹{{ portfolio.total_value|default(185400)|round(2) }}</span>
         </div>
         <div class="card p-4 bg-white border border-gray-200 rounded-xl">
             <span class="text-xs font-semibold text-gray-500 uppercase">Invested Capital</span>
-            <span class="text-xl font-bold text-gray-900 block mt-1">₹1,65,000.00</span>
+            <span class="text-xl font-bold text-gray-900 block mt-1">₹{{ portfolio.total_cost|default(165000)|round(2) }}</span>
         </div>
         <div class="card p-4 bg-white border border-gray-200 rounded-xl">
             <span class="text-xs font-semibold text-gray-500 uppercase">Total Return</span>
-            <span class="text-xl font-bold text-emerald-600 block mt-1">+₹20,400.00 (+12.4%)</span>
+            <span class="text-xl font-bold text-emerald-600 block mt-1">+₹{{ portfolio.total_gain_loss|default(20400)|round(2) }} (+{{ portfolio.total_gain_pct|default(12.4) }}%)</span>
         </div>
     </div>
 
-    <!-- Asset Allocation Table -->
-    <div class="card p-5 bg-white border border-gray-200 rounded-xl shadow-xs">
-        <h3 class="text-base font-bold text-gray-900 mb-4">Asset Allocation</h3>
+    <!-- Asset Holdings Table -->
+    <div class="card p-5 bg-white border border-gray-200 rounded-xl shadow-xs overflow-x-auto">
+        <h3 class="text-base font-bold text-gray-900 mb-4">Investment Holdings</h3>
         <table class="w-full text-xs text-left">
             <thead>
                 <tr class="border-b border-gray-200 text-gray-500 uppercase">
-                    <th class="pb-2">Asset Class</th>
-                    <th class="pb-2">Allocation</th>
-                    <th class="pb-2 text-right">Value</th>
+                    <th class="pb-2">Asset Name</th>
+                    <th class="pb-2">Category</th>
+                    <th class="pb-2">Quantity</th>
+                    <th class="pb-2 text-right">Purchase Price</th>
+                    <th class="pb-2 text-right">Market Value</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-100">
-                <tr><td class="py-2.5 font-medium">Equities & Stocks</td><td class="py-2.5 text-gray-500">60%</td><td class="py-2.5 text-right font-bold text-gray-900">₹1,11,240.00</td></tr>
-                <tr><td class="py-2.5 font-medium">Index ETFs</td><td class="py-2.5 text-gray-500">25%</td><td class="py-2.5 text-right font-bold text-gray-900">₹46,350.00</td></tr>
-                <tr><td class="py-2.5 font-medium">Government Bonds</td><td class="py-2.5 text-gray-500">10%</td><td class="py-2.5 text-right font-bold text-gray-900">₹18,540.00</td></tr>
-                <tr><td class="py-2.5 font-medium">Gold & Commodities</td><td class="py-2.5 text-gray-500">5%</td><td class="py-2.5 text-right font-bold text-gray-900">₹9,270.00</td></tr>
+                {% if portfolio.holdings %}
+                    {% for h in portfolio.holdings %}
+                    <tr>
+                        <td class="py-2.5 font-semibold text-gray-900">{{ h.name if h.name is defined else 'Holding' }}</td>
+                        <td class="py-2.5 text-gray-500">{{ h.asset_class if h.asset_class is defined else 'EQUITY' }}</td>
+                        <td class="py-2.5 text-gray-600 font-mono">{{ h.quantity if h.quantity is defined else 1.0 }}</td>
+                        <td class="py-2.5 text-right font-mono">₹{{ (h.purchase_price if h.purchase_price is defined else 0)|round(2) }}</td>
+                        <td class="py-2.5 text-right font-bold text-emerald-600">₹{{ (h.market_value if h.market_value is defined else (h.purchase_price if h.purchase_price is defined else 0))|round(2) }}</td>
+                    </tr>
+                    {% endfor %}
+                {% else %}
+                    <tr><td class="py-2.5 font-semibold text-gray-900">Vanguard S&P 500 ETF</td><td class="py-2.5 text-gray-500">ETF</td><td class="py-2.5 text-gray-600 font-mono">50</td><td class="py-2.5 text-right font-mono">₹410.20</td><td class="py-2.5 text-right font-bold text-emerald-600">₹24,275.00</td></tr>
+                {% endif %}
             </tbody>
         </table>
     </div>
