@@ -33,3 +33,11 @@ def add_account():
     service.add_account(user_id, name, acc_type, balance)
     flash(f"Account '{name}' added successfully!", "success")
     return redirect(url_for("accounts.index"))
+
+@account_bp.route("/<acc_id>/delete", methods=["POST"])
+@RBAC.require_auth
+def delete_account(acc_id):
+    service = get_account_service()
+    service.repo.delete(acc_id)
+    flash("Account deleted successfully!", "success")
+    return redirect(url_for("accounts.index"))

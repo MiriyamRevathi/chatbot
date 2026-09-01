@@ -23,17 +23,21 @@
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
         {% if budgets %}
             {% for b in budgets %}
-            <div class="card p-4 bg-white border border-gray-200 rounded-xl">
-                <div class="flex justify-between font-bold text-sm mb-2">
-                    <span>{{ (b.category if b.category is defined else 'General')|capitalize }}</span>
-                    <span>₹{{ (b.spent_amount if b.spent_amount is defined else 0)|round(0) }} / ₹{{ (b.limit_amount if b.limit_amount is defined else 1000)|round(0) }}</span>
+            <div class="card p-4 bg-white border border-gray-200 rounded-xl flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between font-bold text-sm mb-2">
+                        <span>{{ (b.category if b.category is defined else 'General')|capitalize }}</span>
+                        <span>₹{{ (b.spent_amount if b.spent_amount is defined else 0)|round(0) }} / ₹{{ (b.limit_amount if b.limit_amount is defined else 1000)|round(0) }}</span>
+                    </div>
+                    <div class="w-full bg-gray-100 h-2.5 rounded-full mb-2">
+                        <div class="bg-rose-600 h-2.5 rounded-full" style="width: {{ (b.percentage_used if b.percentage_used is defined else (b.percentage if b.percentage is defined else 50)) }}%;"></div>
+                    </div>
                 </div>
-                <div class="w-full bg-gray-100 h-2.5 rounded-full mb-2">
-                    <div class="bg-rose-600 h-2.5 rounded-full" style="width: {{ (b.percentage_used if b.percentage_used is defined else (b.percentage if b.percentage is defined else 50)) }}%;"></div>
-                </div>
-                <div class="flex justify-between text-gray-500 text-[11px]">
+                <div class="flex justify-between items-center text-gray-500 text-[11px] pt-2 border-t border-gray-50 mt-2">
                     <span>₹{{ (b.remaining_amount if b.remaining_amount is defined else 0)|round(0) }} remaining</span>
-                    <span class="font-bold text-gray-900">{{ (b.percentage_used if b.percentage_used is defined else (b.percentage if b.percentage is defined else 50)) }}%</span>
+                    <form action="/budget/{{ b.id }}/delete" method="POST" class="inline" onsubmit="return confirm('Delete this budget?');">
+                        <button type="submit" class="text-rose-600 hover:text-rose-800 font-semibold text-[11px]">Delete</button>
+                    </form>
                 </div>
             </div>
             {% endfor %}

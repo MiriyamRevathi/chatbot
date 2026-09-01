@@ -37,6 +37,7 @@
                     <th class="pb-2">Interest Rate</th>
                     <th class="pb-2">Tenure</th>
                     <th class="pb-2 text-right">Monthly EMI</th>
+                    <th class="pb-2 text-right">Action</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-100">
@@ -48,10 +49,15 @@
                         <td class="py-2.5 text-gray-500">{{ l.annual_interest_rate if l.annual_interest_rate is defined else 8.5 }}% p.a.</td>
                         <td class="py-2.5 text-gray-500">{{ l.tenure_months if l.tenure_months is defined else 36 }} mos</td>
                         <td class="py-2.5 text-right font-bold text-rose-600">₹{{ (l.monthly_emi if l.monthly_emi is defined else 0)|round(0) }}</td>
+                        <td class="py-2.5 text-right">
+                            <form action="/loans/{{ l.id }}/delete" method="POST" class="inline" onsubmit="return confirm('Delete loan account?');">
+                                <button type="submit" class="text-rose-600 hover:text-rose-800 font-semibold text-[11px]">Delete</button>
+                            </form>
+                        </td>
                     </tr>
                     {% endfor %}
                 {% else %}
-                    <tr><td class="py-2.5 font-semibold text-gray-900">Primary Home Mortgage</td><td class="py-2.5 font-mono text-gray-900">₹3,50,000</td><td class="py-2.5 text-gray-500">6.5% p.a.</td><td class="py-2.5 text-gray-500">360 mos</td><td class="py-2.5 text-right font-bold text-rose-600">₹12,500</td></tr>
+                    <tr><td class="py-2.5 font-semibold text-gray-900">Primary Home Mortgage</td><td class="py-2.5 font-mono text-gray-900">₹3,50,000</td><td class="py-2.5 text-gray-500">6.5% p.a.</td><td class="py-2.5 text-gray-500">360 mos</td><td class="py-2.5 text-right font-bold text-rose-600">₹12,500</td><td class="py-2.5 text-right"><span class="text-gray-300">—</span></td></tr>
                 {% endif %}
             </tbody>
         </table>

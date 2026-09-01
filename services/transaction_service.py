@@ -1,11 +1,7 @@
 """
 Transaction Management Service
-Handles transaction creation, batch CSV parsing, filtering, pagination, fraud tagging, and spending aggregates.
 """
-
 import uuid
-import csv
-import io
 from datetime import datetime
 from typing import List, Dict, Any, Optional
 from storage.file_storage import FileStorageEngine
@@ -24,14 +20,7 @@ class TransactionService:
             sample_data = [
                 ("acc_checking_01", "user_customer_01", 3450.00, "INCOME", "INCOME", "TechCorp Inc Payroll", "2026-08-01", "Monthly Salary Deposit", "DIRECT_DEPOSIT"),
                 ("acc_checking_01", "user_customer_01", -145.20, "EXPENSE", "GROCERIES", "Whole Foods Market", "2026-08-03", "Weekly Organic Groceries", "DEBIT_CARD"),
-                ("acc_checking_01", "user_customer_01", -12.50, "EXPENSE", "DINING", "Starbucks Coffee", "2026-08-04", "Morning Latte", "DEBIT_CARD"),
-                ("acc_credit_01", "user_customer_01", -89.99, "EXPENSE", "UTILITIES", "Comcast Cable", "2026-08-05", "Internet Service", "CREDIT_CARD"),
-                ("acc_checking_01", "user_customer_01", -1400.00, "EXPENSE", "HOUSING", "Highland Park Apartments", "2026-08-06", "Monthly Rent Payment", "ACH_TRANSFER"),
-                ("acc_credit_01", "user_customer_01", -45.00, "EXPENSE", "TRANSPORTATION", "Shell Oil Station", "2026-08-08", "Fuel Fill-up", "CREDIT_CARD"),
-                ("acc_checking_01", "user_customer_01", -15.99, "EXPENSE", "ENTERTAINMENT", "Netflix Subscription", "2026-08-10", "Premium Streaming Plan", "DEBIT_CARD"),
-                ("acc_checking_01", "user_customer_01", -210.00, "EXPENSE", "SHOPPING", "Amazon.com Retail", "2026-08-12", "Home Goods & Electronics", "DEBIT_CARD"),
-                ("acc_invest_01", "user_customer_01", -500.00, "TRANSFER", "INVESTMENT", "Vanguard S&P 500 ETF", "2026-08-15", "Monthly Index Fund Contribution", "AUTO_TRANSFER"),
-                ("acc_checking_01", "user_customer_01", 120.00, "INCOME", "INCOME", "Dividends Payout", "2026-08-18", "Quarterly Stock Dividend", "DIRECT_DEPOSIT")
+                ("acc_checking_01", "user_customer_01", -12.50, "EXPENSE", "DINING", "Starbucks Coffee", "2026-08-04", "Morning Latte", "DEBIT_CARD")
             ]
             for acc_id, u_id, amt, t_type, cat, merch, dt, desc, p_meth in sample_data:
                 tx = Transaction(
@@ -84,6 +73,9 @@ class TransactionService:
         )
         self.repo.add(new_tx.to_dict())
         return new_tx
+
+    def delete_transaction(self, tx_id: str) -> bool:
+        return self.repo.delete(tx_id)
 
     def get_category_breakdown(self, user_id: str) -> Dict[str, float]:
         txs = self.get_user_transactions(user_id)

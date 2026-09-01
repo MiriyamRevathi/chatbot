@@ -37,6 +37,7 @@
                     <th class="pb-2">Quantity</th>
                     <th class="pb-2 text-right">Purchase Price</th>
                     <th class="pb-2 text-right">Market Value</th>
+                    <th class="pb-2 text-right">Action</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-100">
@@ -48,10 +49,15 @@
                         <td class="py-2.5 text-gray-600 font-mono">{{ h.quantity if h.quantity is defined else 1.0 }}</td>
                         <td class="py-2.5 text-right font-mono">₹{{ (h.purchase_price if h.purchase_price is defined else 0)|round(2) }}</td>
                         <td class="py-2.5 text-right font-bold text-emerald-600">₹{{ (h.market_value if h.market_value is defined else (h.purchase_price if h.purchase_price is defined else 0))|round(2) }}</td>
+                        <td class="py-2.5 text-right">
+                            <form action="/investments/{{ h.id }}/delete" method="POST" class="inline" onsubmit="return confirm('Delete holding?');">
+                                <button type="submit" class="text-rose-600 hover:text-rose-800 font-semibold text-[11px]">Delete</button>
+                            </form>
+                        </td>
                     </tr>
                     {% endfor %}
                 {% else %}
-                    <tr><td class="py-2.5 font-semibold text-gray-900">Vanguard S&P 500 ETF</td><td class="py-2.5 text-gray-500">ETF</td><td class="py-2.5 text-gray-600 font-mono">50</td><td class="py-2.5 text-right font-mono">₹410.20</td><td class="py-2.5 text-right font-bold text-emerald-600">₹24,275.00</td></tr>
+                    <tr><td class="py-2.5 font-semibold text-gray-900">Vanguard S&P 500 ETF</td><td class="py-2.5 text-gray-500">ETF</td><td class="py-2.5 text-gray-600 font-mono">50</td><td class="py-2.5 text-right font-mono">₹410.20</td><td class="py-2.5 text-right font-bold text-emerald-600">₹24,275.00</td><td class="py-2.5 text-right"><span class="text-gray-300">—</span></td></tr>
                 {% endif %}
             </tbody>
         </table>

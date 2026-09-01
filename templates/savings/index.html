@@ -13,16 +13,23 @@
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs">
         {% if goals %}
             {% for g in goals %}
-            <div class="card p-5 bg-white border border-gray-200 rounded-xl shadow-xs">
-                <div class="flex justify-between items-center mb-2">
-                    <h3 class="font-bold text-base text-gray-900">{{ g.goal_name if g.goal_name is defined else 'Savings Goal' }}</h3>
-                    <span class="text-emerald-600 font-bold">{{ ((g.current_amount / g.target_amount) * 100)|round(1) if g.target_amount is defined and g.target_amount > 0 else 70 }}%</span>
+            <div class="card p-5 bg-white border border-gray-200 rounded-xl shadow-xs flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="font-bold text-base text-gray-900">{{ g.goal_name if g.goal_name is defined else 'Savings Goal' }}</h3>
+                        <span class="text-emerald-600 font-bold">{{ ((g.current_amount / g.target_amount) * 100)|round(1) if g.target_amount is defined and g.target_amount > 0 else 70 }}%</span>
+                    </div>
+                    <p class="text-gray-500 mb-3">₹{{ (g.current_amount if g.current_amount is defined else 35000)|round(0) }} saved of ₹{{ (g.target_amount if g.target_amount is defined else 50000)|round(0) }} target</p>
+                    <div class="w-full bg-gray-100 h-3 rounded-full mb-4"><div class="bg-emerald-600 h-3 rounded-full" style="width: {{ ((g.current_amount / g.target_amount) * 100)|round(0) if g.target_amount is defined and g.target_amount > 0 else 70 }}%;"></div></div>
                 </div>
-                <p class="text-gray-500 mb-3">₹{{ (g.current_amount if g.current_amount is defined else 35000)|round(0) }} saved of ₹{{ (g.target_amount if g.target_amount is defined else 50000)|round(0) }} target</p>
-                <div class="w-full bg-gray-100 h-3 rounded-full mb-4"><div class="bg-emerald-600 h-3 rounded-full" style="width: {{ ((g.current_amount / g.target_amount) * 100)|round(0) if g.target_amount is defined and g.target_amount > 0 else 70 }}%;"></div></div>
                 <div class="flex justify-between items-center pt-3 border-t border-gray-100">
                     <span class="text-gray-500">Target Date: {{ g.target_date if g.target_date is defined else '2026-12-31' }}</span>
-                    <button onclick="openContribModal('{{ g.id if g.id is defined else 'g1' }}')" class="btn btn-secondary text-xs px-3 py-1">Add Contribution</button>
+                    <div class="flex gap-2 items-center">
+                        <button onclick="openContribModal('{{ g.id if g.id is defined else 'g1' }}')" class="btn btn-secondary text-xs px-3 py-1">Add Contribution</button>
+                        <form action="/savings/{{ g.id }}/delete" method="POST" class="inline" onsubmit="return confirm('Delete this savings goal?');">
+                            <button type="submit" class="text-rose-600 hover:text-rose-800 font-semibold text-[11px]">Delete</button>
+                        </form>
+                    </div>
                 </div>
             </div>
             {% endfor %}

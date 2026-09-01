@@ -35,6 +35,14 @@ def add_loan():
     flash(f"Loan '{name}' added successfully!", "success")
     return redirect(url_for("loans.index"))
 
+@loan_bp.route("/<loan_id>/delete", methods=["POST"])
+@RBAC.require_auth
+def delete_loan(loan_id):
+    service = get_loan_service()
+    service.repo.delete(loan_id)
+    flash("Loan account deleted!", "success")
+    return redirect(url_for("loans.index"))
+
 @loan_bp.route("/calculator")
 @RBAC.require_auth
 def calculator():

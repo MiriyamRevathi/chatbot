@@ -64,5 +64,16 @@
     "purchase_price": 100.0,
     "current_price": 100.0,
     "last_updated": "2026-09-01T05:57:07.860667"
+  },
+  {
+    "id": "hld_bce38d457c7d",
+    "user_id": "user_customer_01",
+    "symbol": "44",
+    "name": "44",
+    "asset_class": "ETF",
+    "quantity": 8.0,
+    "purchase_price": 100.0,
+    "current_price": 100.0,
+    "last_updated": "2026-09-01T06:03:30.408587"
   }
 ]

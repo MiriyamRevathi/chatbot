@@ -27,9 +27,16 @@ def add_investment():
     name = request.form.get("asset_name", "").strip() or "Index ETF Fund"
     category = request.form.get("asset_category", "EQUITY")
     amount = float(request.form.get("amount", 10000.0))
-    buy_price = float(request.form.get("buy_price", 100.0))
     
     service = get_investment_service()
-    service.add_investment(user_id, name, category, amount, buy_price)
+    service.add_investment(user_id, name, category, amount)
     flash(f"Investment '{name}' recorded successfully!", "success")
+    return redirect(url_for("investments.index"))
+
+@investment_bp.route("/<h_id>/delete", methods=["POST"])
+@RBAC.require_auth
+def delete_investment(h_id):
+    service = get_investment_service()
+    service.repo.delete(h_id)
+    flash("Investment holding deleted!", "success")
     return redirect(url_for("investments.index"))

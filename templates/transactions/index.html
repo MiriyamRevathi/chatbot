@@ -38,6 +38,7 @@
                     <th class="pb-3">Category</th>
                     <th class="pb-3">Account</th>
                     <th class="pb-3 text-right">Amount</th>
+                    <th class="pb-3 text-right">Action</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-100">
@@ -51,13 +52,15 @@
                         <td class="py-3 text-right font-bold {% if tx.amount < 0 %}text-rose-600{% else %}text-emerald-600{% endif %}">
                             {% if tx.amount < 0 %}-₹{{ (tx.amount * -1)|round(2) }}{% else %}+₹{{ tx.amount|round(2) }}{% endif %}
                         </td>
+                        <td class="py-3 text-right">
+                            <form action="/transactions/{{ tx.id }}/delete" method="POST" class="inline" onsubmit="return confirm('Delete this transaction?');">
+                                <button type="submit" class="text-rose-600 hover:text-rose-800 font-semibold text-[11px]">Delete</button>
+                            </form>
+                        </td>
                     </tr>
                     {% endfor %}
                 {% else %}
-                    <tr><td class="py-3 text-gray-500">Aug 31, 2026</td><td class="py-3 font-semibold text-gray-900">Organic Grocery Store</td><td class="py-3 text-gray-600">Food</td><td class="py-3 text-gray-500">Checking •••• 4821</td><td class="py-3 text-right font-bold text-rose-600">-₹850.00</td></tr>
-                    <tr><td class="py-3 text-gray-500">Aug 30, 2026</td><td class="py-3 font-semibold text-gray-900">Monthly Salary Credit</td><td class="py-3 text-gray-600">Income</td><td class="py-3 text-gray-500">Checking •••• 4821</td><td class="py-3 text-right font-bold text-emerald-600">+₹45,000.00</td></tr>
-                    <tr><td class="py-3 text-gray-500">Aug 28, 2026</td><td class="py-3 font-semibold text-gray-900">Tech Retailer Store</td><td class="py-3 text-gray-600">Shopping</td><td class="py-3 text-gray-500">Credit Card •••• 3314</td><td class="py-3 text-right font-bold text-rose-600">-₹2,400.00</td></tr>
-                    <tr><td class="py-3 text-gray-500">Aug 25, 2026</td><td class="py-3 font-semibold text-gray-900">Electricity Bill Payment</td><td class="py-3 text-gray-600">Bills</td><td class="py-3 text-gray-500">Checking •••• 4821</td><td class="py-3 text-right font-bold text-rose-600">-₹1,200.00</td></tr>
+                    <tr><td class="py-3 text-gray-500">Aug 31, 2026</td><td class="py-3 font-semibold text-gray-900">Organic Grocery Store</td><td class="py-3 text-gray-600">Food</td><td class="py-3 text-gray-500">Checking •••• 4821</td><td class="py-3 text-right font-bold text-rose-600">-₹850.00</td><td class="py-3 text-right"><span class="text-gray-300">—</span></td></tr>
                 {% endif %}
             </tbody>
         </table>

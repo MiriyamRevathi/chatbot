@@ -1,8 +1,6 @@
 """
-Transaction Management Blueprint Routes
-Handles transaction listing, adding, filtering, CSV export, and deletion.
+Transaction Blueprint Routes
 """
-
 from flask import Blueprint, render_template, request, redirect, url_for, flash, session, current_app, Response
 from security.rbac import RBAC
 from services.transaction_service import TransactionService
@@ -60,6 +58,14 @@ def add_transaction():
     acc_service.update_balance(account_id, amount)
     
     flash(f"Transaction of ₹{abs(amount):,.2f} at '{merchant}' saved successfully!", "success")
+    return redirect(url_for("transactions.index"))
+
+@transaction_bp.route("/<tx_id>/delete", methods=["POST"])
+@RBAC.require_auth
+def delete_transaction(tx_id):
+    tx_service, _ = get_services()
+    tx_service.delete_transaction(tx_id)
+    flash("Transaction deleted successfully!", "success")
     return redirect(url_for("transactions.index"))
 
 @transaction_bp.route("/export", methods=["GET"])

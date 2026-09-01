@@ -27,11 +27,10 @@ def add_goal():
     user_id = session.get("user_id")
     name = request.form.get("goal_name", "").strip() or "New Savings Goal"
     target = float(request.form.get("target_amount", 10000.0))
-    contrib = float(request.form.get("monthly_contribution", 1000.0))
     target_date = request.form.get("target_date", "2026-12-31")
     
     service = get_savings_service()
-    service.create_goal(user_id, name, target, target_date, contrib)
+    service.create_goal(user_id, name, target, target_date)
     flash(f"Savings Goal '{name}' created!", "success")
     return redirect(url_for("savings.index"))
 
@@ -43,4 +42,12 @@ def add_contribution():
     service = get_savings_service()
     service.add_contribution(goal_id, amount)
     flash(f"Contribution of ₹{amount:,.2f} added to goal!", "success")
+    return redirect(url_for("savings.index"))
+
+@savings_bp.route("/<goal_id>/delete", methods=["POST"])
+@RBAC.require_auth
+def delete_goal(goal_id):
+    service = get_savings_service()
+    service.repo.delete(goal_id)
+    flash("Savings Goal deleted successfully!", "success")
     return redirect(url_for("savings.index"))
