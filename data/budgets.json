@@ -54,5 +54,29 @@
     "limit_amount": 400.0,
     "period": "2026-08",
     "created_at": "2026-08-29T10:21:24.790920"
+  },
+  {
+    "id": "bgt_6c754d5b6081",
+    "user_id": "user_customer_01",
+    "category": "FOOD",
+    "limit_amount": 2300.0,
+    "period": "2026-08",
+    "created_at": "2026-09-01T05:26:54.159258"
+  },
+  {
+    "id": "bgt_b2fd895a3e35",
+    "user_id": "user_customer_01",
+    "category": "FOOD",
+    "limit_amount": 90000.0,
+    "period": "2026-08",
+    "created_at": "2026-09-01T05:27:13.754060"
+  },
+  {
+    "id": "bgt_07f58f09733f",
+    "user_id": "user_customer_01",
+    "category": "CHOCOLATE",
+    "limit_amount": 7000.0,
+    "period": "2026-08",
+    "created_at": "2026-09-01T05:28:38.188465"
   }
 ]
